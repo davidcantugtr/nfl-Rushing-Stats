@@ -12,6 +12,19 @@ Build a season-long reference dataset that combines:
 4. 2026 Sharp Football Analysis `Rush Efficiency Def` opponent rankings.
 5. A transparent 2026 opportunity matrix for identifying favorable early-game rushing environments.
 
+## Current validated build
+
+The 2025 historical reconstruction is now passing its integrity gate:
+
+- 272 regular-season games.
+- 544 team-game Q1 rows.
+- 1,295 RB/FB game rows.
+- 15,518 league-wide first-quarter rushing yards.
+- All 32 teams reconcile exactly to the FootballDB first-quarter rushing aggregate targets for both attempts and yards.
+- Zero unmatched rusher-position game records.
+
+The processed files are committed automatically only after the reconciliation test passes.
+
 ## Data integrity rules
 
 - Historical game-level rushing data comes from nflverse play-by-play via `nflreadpy`.
@@ -19,11 +32,13 @@ Build a season-long reference dataset that combines:
 - First quarter only for Q1 output metrics.
 - `rush_attempt == 1`.
 - No-play penalties are excluded when the `no_play` field is available.
+- Two-point conversion rushes are excluded because they do not count as official rushing attempts/yards.
 - Team rushing includes all official rushers, including quarterbacks and receivers.
 - The RB layer is kept separate and includes roster positions `RB` and `FB`.
 - Team-game rows are built from the full 2025 regular-season game skeleton so a zero-rush Q1 is retained as a real zero rather than disappearing from grouped data.
 - The build must reconcile the reconstructed 2025 Q1 team rushing totals against the published FootballDB Q1 aggregates before processed outputs are accepted.
 - Missing or unmatched player-position records are surfaced explicitly rather than guessed.
+- A documented official-stat correction is applied to `2025_07_IND_LAC`, play `641`: nflverse records the aborted Daniel Jones snap/fumble recovery as 0 rushing yards, while the official first-quarter rushing split requires +3 net rushing yards. The correction reconciles Daniel Jones to 69 Q1 rushing yards and Indianapolis to 517.
 
 ## Outputs
 
@@ -41,10 +56,10 @@ The automated build writes these files to `data/processed/`:
 
 ```bash
 python -m pip install -r requirements.txt
-python src/build_q1_rushing_dataset.py
+python src/build_q1_rushing_dataset_v2.py
 ```
 
-A GitHub Actions workflow runs the pipeline and commits validated processed outputs back to the repository.
+A GitHub Actions workflow runs the pipeline on relevant pushes, on demand, and on a weekly schedule. Validated processed outputs are committed back to the repository automatically.
 
 ## Attribution
 
