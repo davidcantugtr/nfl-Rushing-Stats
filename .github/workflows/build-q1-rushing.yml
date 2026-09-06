@@ -34,7 +34,12 @@ jobs:
       - name: Build and validate Q1 rushing dataset
         run: python src/build_q1_rushing_dataset.py
 
+      - name: Print reconciliation diagnostics on failure
+        if: failure()
+        run: python src/debug_q1_discrepancies.py
+
       - name: Commit validated outputs
+        if: success()
         run: |
           if git diff --quiet -- data/processed; then
             echo 'No processed data changes.'
