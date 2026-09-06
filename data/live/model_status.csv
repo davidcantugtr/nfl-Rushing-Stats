@@ -1,0 +1,10 @@
+key,value
+season,2026
+current_target_week,1
+last_model_refresh,2026-09-06
+next_scheduled_refresh,2026-09-17 03:00 CT
+timezone,America/Chicago
+scoring_version,v0.5 production candidate + v0.4 audit
+source_repo,davidcantugtr/nfl-Rushing-Stats
+sheet_mode,GitHub source-of-truth + Google Sheets live display
+sharp_status,Verified preseason 2026-09-06; refresh weekly
