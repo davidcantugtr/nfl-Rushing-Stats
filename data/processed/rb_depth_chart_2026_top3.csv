@@ -1,0 +1,97 @@
+team,player_name,gsis_id,pos_slot,pos_rank,depth_snapshot_utc,depth_source,team_rb_order
+ARI,Jeremiyah Love,00-0041027,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+ARI,Tyler Allgeier,00-0037263,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+ARI,Bam Knight,00-0037157,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+ATL,Bijan Robinson,00-0038542,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+ATL,Brian Robinson Jr.,00-0037746,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+ATL,Trey Sermon,00-0036984,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+BAL,Derrick Henry,00-0032764,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+BAL,Justice Hill,00-0034975,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+BAL,Rasheen Ali,00-0039796,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+BUF,James Cook III,00-0037248,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+BUF,Ray Davis,00-0039875,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+BUF,Ty Johnson,00-0035537,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+CAR,Chuba Hubbard,00-0036555,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+CAR,Jonathon Brooks,00-0039344,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+CAR,AJ Dillon,00-0036265,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+CHI,D'Andre Swift,00-0036275,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+CHI,Kyle Monangai,00-0040236,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+CHI,Roschon Johnson,00-0039021,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+CIN,Chase Brown,00-0038597,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+CIN,Samaje Perine,00-0033526,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+CIN,Tahj Brooks,00-0040208,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+CLE,Quinshon Judkins,00-0040784,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+CLE,Dylan Sampson,00-0040162,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+CLE,Raheim Sanders,00-0040466,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+DAL,Javonte Williams,00-0036997,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+DAL,Malik Davis,00-0037563,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+DAL,Emari Demercado,00-0038705,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+DEN,J.K. Dobbins,00-0036158,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+DEN,RJ Harvey,00-0040730,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+DEN,Jonah Coleman,00-0041496,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+DET,Jahmyr Gibbs,00-0039139,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+DET,Sione Vaki,00-0039364,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+DET,Jacob Saylors,00-0038896,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+GB,MarShawn Lloyd,00-0039811,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+GB,Chris Brooks,00-0038685,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+GB,Kaleb Johnson,00-0040142,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+HOU,David Montgomery,00-0035685,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+HOU,Woody Marks,00-0040583,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+HOU,British Brooks,00-0039603,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+IND,Jonathan Taylor,00-0036223,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+IND,Seth McGowan,00-0041125,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+IND,DJ Giddens,00-0040179,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+JAX,Bhayshul Tuten,00-0040719,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+JAX,Chris Rodriguez Jr.,00-0038611,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+JAX,LeQuint Allen Jr.,00-0040238,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+KC,Kenneth Walker III,00-0038134,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+KC,Emmett Johnson,00-0041013,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+KC,Brashard Smith,00-0040078,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+LA,Kyren Williams,00-0037840,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+LA,Blake Corum,00-0039738,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+LA,Ronnie Rivers,00-0037557,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+LAC,Omarion Hampton,00-0040666,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+LAC,Keaton Mitchell,00-0038454,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+LAC,Kimani Vidal,00-0039391,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+LV,Ashton Jeanty,00-0040122,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+LV,Mike Washington Jr.,WAS569019,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+LV,Dylan Laube,00-0039407,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+MIA,De'Von Achane,00-0039040,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+MIA,Jaylen Wright,00-0039874,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+MIA,Ollie Gordon II,00-0040198,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+MIN,Aaron Jones Sr.,00-0033293,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+MIN,Jordan Mason,00-0037525,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+MIN,Demond Claiborne,00-0041104,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+NE,Rhamondre Stevenson,00-0036875,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+NE,TreVeyon Henderson,00-0040734,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+NE,Corey Kiner,00-0040556,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+NO,Travis Etienne Jr.,00-0036973,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+NO,Alvin Kamara,00-0033906,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+NO,Kendre Miller,00-0038551,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+NYG,Cam Skattebo,00-0040715,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+NYG,Tyrone Tracy Jr.,00-0039384,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+NYG,Najee Harris,00-0036893,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+NYJ,Breece Hall,00-0038120,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+NYJ,Braelon Allen,00-0039794,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+NYJ,Isaiah Davis,00-0039798,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+PHI,Saquon Barkley,00-0034844,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+PHI,Tank Bigsby,00-0038555,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+PHI,Will Shipley,00-0039746,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+PIT,Jaylen Warren,00-0037228,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+PIT,Rico Dowdle,00-0036139,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+PIT,Eli Heidenreich,00-0041490,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+SEA,Jadarian Price,00-0041512,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+SEA,George Holani,00-0039299,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+SEA,Emanuel Wilson,00-0038797,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+SF,Christian McCaffrey,00-0033280,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+SF,Kaelon Black,00-0041052,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+SF,Jordan James,00-0040177,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+TB,Bucky Irving,00-0039361,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+TB,Kenny Gainwell,00-0036919,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+TB,Sean Tucker,00-0038951,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+TEN,Tony Pollard,00-0035261,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+TEN,Tyjae Spears,00-0039032,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+TEN,Nicholas Singleton,00-0040886,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
+WAS,Jacory Croskey-Merritt,00-0040242,11,1,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,1
+WAS,Rachaad White,00-0037256,11,2,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,2
+WAS,Kaytron Allen,00-0041096,11,3,2026-09-06T11:29:30+00:00,nflverse depth charts via nflreadpy,3
