@@ -1,0 +1,7 @@
+component,production_weight
+team_env,0.15
+share,0.3
+defense,0.1
+history,0.3
+consistency,0.1
+confidence,0.05
