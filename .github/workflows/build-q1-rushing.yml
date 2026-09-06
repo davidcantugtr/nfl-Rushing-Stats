@@ -41,7 +41,7 @@ jobs:
       - name: Commit validated outputs
         if: success()
         run: |
-          if git diff --quiet -- data/processed; then
+          if [ -z "$(git status --porcelain -- data/processed)" ]; then
             echo 'No processed data changes.'
             exit 0
           fi
