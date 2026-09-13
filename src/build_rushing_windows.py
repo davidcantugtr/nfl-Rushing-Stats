@@ -319,6 +319,16 @@ def build_live_board(team_summary: pd.DataFrame, defense_summary: pd.DataFrame, 
             books = int(prop["sportsbook_count"].iloc[0]) if len(prop) else 0
             model_prob = no_vig_probability_from_history(script_adjusted, hist_std, line) if len(prop) else np.nan
             edge = model_prob - book_prob if pd.notna(model_prob) and pd.notna(book_prob) else np.nan
+            if window == "Q1":
+                model_benchmark = 20.0
+                model_benchmark_probability = float(player["prob20_proxy"])
+                probability_source = "Existing Q1 20+ proxy"
+            else:
+                model_benchmark = line if pd.notna(line) else (40.0 if window == "1H" else 60.0)
+                model_benchmark_probability = no_vig_probability_from_history(
+                    script_adjusted, hist_std, model_benchmark
+                )
+                probability_source = "Historical window distribution"
             status = "LIVE CONSENSUS" if len(prop) else (
                 "MODEL ONLY — WINDOW MARKET UNAVAILABLE" if window in ["Q1", "1H"] else "AWAITING FULL-GAME LINE"
             )
@@ -340,6 +350,9 @@ def build_live_board(team_summary: pd.DataFrame, defense_summary: pd.DataFrame, 
                 "leading_probability": lead_p, "trailing_rush_yds": trailing,
                 "neutral_rush_yds": neutral, "leading_rush_yds": leading,
                 "script_adjusted_rush_yds": script_adjusted, "floor": floor, "ceiling": ceiling,
+                "model_benchmark_yards": model_benchmark,
+                "model_benchmark_probability": model_benchmark_probability,
+                "probability_source": probability_source,
                 "sportsbook_market": "player_rush_yds" if window == "Full Game" else "",
                 "consensus_line": line, "sportsbook_over_probability": book_prob,
                 "model_over_probability": model_prob, "probability_edge": edge,
