@@ -1,13 +1,13 @@
-# NFL First-Quarter Rushing Model
+# NFL Running Back Rushing Opportunity Model
 
-This repository is the reproducible data pipeline behind the 2026 first-quarter rushing opportunity model.
+This repository is the reproducible data pipeline behind the 2026 running-back opportunity model. The original first-quarter model is preserved and extended with first-half and full-game views.
 
 ## Goal
 
 Build a season-long reference dataset that combines:
 
-1. Exact 2025 first-quarter rushing results, game by game.
-2. Running-back first-quarter rushing results and workload concentration.
+1. Exact 2025 first-quarter, first-half and full-game rushing results, game by game.
+2. Running-back rushing results and workload concentration for all three windows.
 3. Opponent first-quarter rushing yards allowed.
 4. 2026 Sharp Football Analysis `Rush Efficiency Def` opponent rankings.
 5. A transparent 2026 opportunity matrix for identifying favorable early-game rushing environments.
@@ -51,12 +51,20 @@ The automated build writes these files to `data/processed/`:
 - `rb_q1_summary_2025.csv` — player distribution, hit rates, and workload share.
 - `reconciliation_2025.csv` — expected vs reconstructed team Q1 rushing yards.
 - `unknown_rusher_positions_2025.csv` — rushers that could not be position-matched, if any.
+- `team_rushing_windows_game_log_2025.csv` — team-game rushing data for Q1, 1H and Full Game.
+- `team_rushing_windows_summary_2025.csv` — team distributions for all three windows.
+- `team_rushing_windows_defense_summary_2025.csv` — opponent rushing allowance by window.
+- `rb_rushing_windows_game_log_2025.csv` — RB/FB game logs for all three windows.
+- `rb_rushing_windows_summary_2025.csv` — player distributions, hit rates and workload share by window.
+
+The live build also writes `data/live/rb_window_opportunity_board.csv`. It contains one row per modeled RB and time window, Sharp Rush Efficiency DEF rank, trailing/neutral/leading game-script outcomes, script-weighted projections, and full-game sportsbook consensus when an aligned rushing-yards market is available. Q1 and 1H rows are explicitly labeled model-only unless a matching window market exists; full-game odds are sourced from the companion `nfl-player-prop-opportunity` repository.
 
 ## Build
 
 ```bash
 python -m pip install -r requirements.txt
 python src/build_q1_rushing_dataset_v2.py
+python src/build_rushing_windows.py
 ```
 
 A GitHub Actions workflow runs the pipeline on relevant pushes, on demand, and on a weekly schedule. Validated processed outputs are committed back to the repository automatically.
