@@ -1,6 +1,12 @@
 name: API-Sports NFL injury pilot
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/api-sports-injury-pilot.yml
+      - src/api_sports_injury_monitor.py
   workflow_dispatch:
     inputs:
       segment:
@@ -9,6 +15,7 @@ on:
         default: noon
         type: choice
         options:
+          - test
           - noon
           - late
           - night
@@ -32,6 +39,7 @@ jobs:
     env:
       PILOT_DATE: "2026-09-20"
       API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
+      SLACK_INJURY_WEBHOOK: ${{ secrets.SLACK_INJURY_WEBHOOK }}
       API_SPORTS_NFL_LEAGUE_ID: "1"
       OUTPUT_DIR: data/live/api_sports/2026-09-20
     steps:
@@ -44,13 +52,17 @@ jobs:
           segment='${{ inputs.segment }}'
           local_date="$(TZ=America/Chicago date +%F)"
 
-          if [[ "$event_name" != "workflow_dispatch" && "$local_date" != "$PILOT_DATE" ]]; then
+          if [[ "$event_name" != "workflow_dispatch" && "$event_name" != "push" && "$local_date" != "$PILOT_DATE" ]]; then
             echo "active=false" >> "$GITHUB_OUTPUT"
             echo "Scheduled run ignored outside the one-day pilot."
             exit 0
           fi
 
-          if [[ "$event_name" != "workflow_dispatch" ]]; then
+          if [[ "$event_name" == "push" ]]; then
+            segment=test
+          fi
+
+          if [[ "$event_name" == "schedule" ]]; then
             case "$schedule" in
               "35 16 * * 0") segment=noon ;;
               "45 19 * * 0") segment=late ;;
@@ -60,6 +72,7 @@ jobs:
           fi
 
           case "$segment" in
+            test)  start=; end= ;;
             noon)  start=11:45; end=14:45 ;;
             late)  start=14:55; end=18:45 ;;
             night) start=19:00; end=22:45 ;;
@@ -80,7 +93,7 @@ jobs:
           python-version: "3.12"
 
       - name: Restore cumulative pilot state
-        if: steps.gate.outputs.active == 'true'
+        if: steps.gate.outputs.active == 'true' && steps.gate.outputs.segment != 'test'
         uses: actions/cache/restore@v4
         with:
           path: ${{ env.OUTPUT_DIR }}
@@ -89,7 +102,7 @@ jobs:
             api-sports-pilot-${{ env.PILOT_DATE }}-
 
       - name: Verify API key
-        if: steps.gate.outputs.active == 'true'
+        if: steps.gate.outputs.active == 'true' && steps.gate.outputs.segment != 'test'
         shell: bash
         run: |
           if [[ -z "$API_SPORTS_KEY" ]]; then
@@ -97,8 +110,21 @@ jobs:
             exit 1
           fi
 
-      - name: Run ${{ steps.gate.outputs.segment }} polling segment
+      - name: Verify Slack webhook
         if: steps.gate.outputs.active == 'true'
+        shell: bash
+        run: |
+          if [[ -z "$SLACK_INJURY_WEBHOOK" ]]; then
+            echo "Repository secret SLACK_INJURY_WEBHOOK is not configured." >&2
+            exit 1
+          fi
+
+      - name: Send deployment test notification
+        if: steps.gate.outputs.active == 'true' && steps.gate.outputs.segment == 'test'
+        run: python src/api_sports_injury_monitor.py --date "$PILOT_DATE" --slack-test
+
+      - name: Run ${{ steps.gate.outputs.segment }} polling segment
+        if: steps.gate.outputs.active == 'true' && steps.gate.outputs.segment != 'test'
         run: >-
           python src/api_sports_injury_monitor.py
           --date "$PILOT_DATE"
@@ -108,14 +134,14 @@ jobs:
           --window-end "${{ steps.gate.outputs.end }}"
 
       - name: Save cumulative pilot state
-        if: always() && steps.gate.outputs.active == 'true'
+        if: always() && steps.gate.outputs.active == 'true' && steps.gate.outputs.segment != 'test'
         uses: actions/cache/save@v4
         with:
           path: ${{ env.OUTPUT_DIR }}
           key: api-sports-pilot-${{ env.PILOT_DATE }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Upload segment evidence
-        if: always() && steps.gate.outputs.active == 'true'
+        if: always() && steps.gate.outputs.active == 'true' && steps.gate.outputs.segment != 'test'
         uses: actions/upload-artifact@v4
         with:
           name: api-sports-${{ env.PILOT_DATE }}-${{ steps.gate.outputs.segment }}-${{ github.run_id }}
