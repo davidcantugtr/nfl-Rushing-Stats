@@ -31,6 +31,28 @@ DEFAULT_BASE_URL = "https://v1.american-football.api-sports.io"
 DEFAULT_TIMEZONE = "America/Chicago"
 DEFAULT_DAILY_CAP = 100
 DEFAULT_RESERVE = 6
+DEFAULT_SLACK_TIMEOUT = 10
+
+DEFENSIVE_POSITIONS = {
+    "CB",
+    "DB",
+    "DE",
+    "DEFENSIVE BACK",
+    "DEFENSIVE END",
+    "DEFENSIVE LINE",
+    "DEFENSIVE TACKLE",
+    "DL",
+    "DT",
+    "FS",
+    "ILB",
+    "LB",
+    "LINEBACKER",
+    "NT",
+    "OLB",
+    "S",
+    "SAFETY",
+    "SS",
+}
 
 
 @dataclass(frozen=True)
@@ -112,6 +134,7 @@ def normalize_injury(item: dict[str, Any]) -> dict[str, Any]:
     normalized = {
         "player_id": _first(player, "id") or _first(item, "player_id", "player"),
         "player_name": _first(player, "name") or _first(item, "player_name", "name"),
+        "position": _first(player, "position", "pos") or _first(item, "position", "pos"),
         "team_id": _first(team, "id") or _first(item, "team_id"),
         "team_name": _first(team, "name") or _first(item, "team_name", "team"),
         "game_id": _first(game, "id") or _first(item, "game_id"),
@@ -128,6 +151,141 @@ def normalize_injury(item: dict[str, Any]) -> dict[str, Any]:
     ).hexdigest()[:16]
     normalized["raw"] = item
     return normalized
+
+
+def _status_text(change: dict[str, Any]) -> str:
+    current = change.get("current") or {}
+    previous = change.get("previous") or {}
+    return " ".join(
+        str(value or "")
+        for value in (
+            current.get("status"),
+            current.get("reason"),
+            previous.get("status"),
+            previous.get("reason"),
+        )
+    ).lower()
+
+
+def classify_severity(change: dict[str, Any]) -> str:
+    """Classify an injury-feed change for mobile notification priority."""
+
+    event_type = change.get("event_type")
+    text = _status_text(change)
+    if event_type == "REMOVED_FROM_CURRENT_FEED":
+        return "IMPORTANT"
+    if any(term in text for term in ("out", "inactive", "ruled out", "cart", "did not return")):
+        return "CRITICAL"
+    if any(term in text for term in ("doubtful", "questionable", "limited", "did not practice", "dnp")):
+        return "IMPORTANT"
+    return "INFORMATIONAL"
+
+
+def is_defensive_or_unclassified(change: dict[str, Any]) -> bool:
+    """Retain defensive changes and unknown positions during the validation pilot."""
+
+    row = change.get("current") or change.get("previous") or {}
+    position = str(row.get("position") or "").strip().upper()
+    return not position or position in DEFENSIVE_POSITIONS
+
+
+def change_fingerprint(change: dict[str, Any]) -> str:
+    payload = {
+        "event_type": change.get("event_type"),
+        "identity": change.get("identity"),
+        "previous_hash": (change.get("previous") or {}).get("state_hash"),
+        "current_hash": (change.get("current") or {}).get("state_hash"),
+    }
+    return hashlib.sha256(_stable_json(payload).encode()).hexdigest()[:24]
+
+
+def format_slack_alert(change: dict[str, Any]) -> dict[str, Any]:
+    row = change.get("current") or change.get("previous") or {}
+    previous = change.get("previous") or {}
+    current = change.get("current") or {}
+    severity = classify_severity(change)
+    icon = {"CRITICAL": "\U0001f6a8", "IMPORTANT": "\u26a0\ufe0f", "INFORMATIONAL": "\u2139\ufe0f"}[severity]
+    team = row.get("team_name") or "Unknown team"
+    player = row.get("player_name") or "Unknown player"
+    position = row.get("position") or "position unclassified"
+    old_status = previous.get("status") or "not previously listed"
+    new_status = current.get("status") or "removed from current feed"
+    observed = change.get("observed_at_utc") or datetime.now(ZoneInfo("UTC")).isoformat()
+    verification = change.get("verification_state") or "PROVISIONAL"
+    fallback = f"{icon} {severity}: {team} {position} {player} — {old_status} -> {new_status}"
+    return {
+        "text": fallback,
+        "blocks": [
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": f"{icon} *{severity} — NFL Injury Update*\n*{team} | {position} | {player}*",
+                },
+            },
+            {
+                "type": "section",
+                "fields": [
+                    {"type": "mrkdwn", "text": f"*Previous*\n{old_status}"},
+                    {"type": "mrkdwn", "text": f"*Current*\n{new_status}"},
+                    {"type": "mrkdwn", "text": f"*Verification*\n{verification}"},
+                    {"type": "mrkdwn", "text": f"*Observed (UTC)*\n{observed}"},
+                ],
+            },
+        ],
+    }
+
+
+def post_slack_payload(webhook_url: str, payload: dict[str, Any], *, timeout: int = DEFAULT_SLACK_TIMEOUT) -> None:
+    body = json.dumps(payload).encode("utf-8")
+    request = Request(webhook_url, data=body, headers={"Content-Type": "application/json"}, method="POST")
+    try:
+        with urlopen(request, timeout=timeout) as response:
+            response_body = response.read().decode("utf-8", errors="replace")
+            if response.status != 200 or response_body.strip() != "ok":
+                raise RuntimeError(f"Slack webhook rejected notification: HTTP {response.status}")
+    except HTTPError as exc:
+        raise RuntimeError(f"Slack webhook HTTP {exc.code}") from exc
+    except (URLError, TimeoutError) as exc:
+        raise RuntimeError(f"Slack webhook connection failed: {exc}") from exc
+
+
+def notify_slack_changes(
+    changes: Iterable[dict[str, Any]],
+    *,
+    webhook_url: str,
+    notification_ledger: Path,
+) -> dict[str, int]:
+    notified = {
+        row.get("fingerprint")
+        for row in _read_jsonl(notification_ledger)
+        if row.get("delivery_state") == "SENT"
+    }
+    sent = skipped = failed = 0
+    for change in changes:
+        if not is_defensive_or_unclassified(change):
+            skipped += 1
+            continue
+        fingerprint = change_fingerprint(change)
+        if fingerprint in notified:
+            skipped += 1
+            continue
+        try:
+            post_slack_payload(webhook_url, format_slack_alert(change))
+        except RuntimeError as exc:
+            failed += 1
+            _append_jsonl(
+                notification_ledger,
+                [{"fingerprint": fingerprint, "delivery_state": "FAILED", "error": str(exc)}],
+            )
+            continue
+        sent += 1
+        notified.add(fingerprint)
+        _append_jsonl(
+            notification_ledger,
+            [{"fingerprint": fingerprint, "delivery_state": "SENT", "event": change}],
+        )
+    return {"sent": sent, "skipped": skipped, "failed": failed}
 
 
 def diff_injuries(previous: Iterable[dict[str, Any]], current: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -200,6 +358,12 @@ def _read_json(path: Path, default: Any) -> Any:
     return json.loads(path.read_text())
 
 
+def _read_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    return [json.loads(line) for line in path.read_text().splitlines() if line]
+
+
 def _append_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
@@ -248,6 +412,15 @@ def run_poll(
     latest_path.write_text(json.dumps(current, indent=2, sort_keys=True))
     _append_jsonl(output_dir / "injury_change_ledger.jsonl", changes)
 
+    slack_result = {"sent": 0, "skipped": 0, "failed": 0}
+    slack_webhook = os.getenv("SLACK_INJURY_WEBHOOK")
+    if changes and slack_webhook:
+        slack_result = notify_slack_changes(
+            changes,
+            webhook_url=slack_webhook,
+            notification_ledger=output_dir / "slack_notification_ledger.jsonl",
+        )
+
     for endpoint, headers in (("injuries", injury_headers), ("games", games_headers)):
         _append_jsonl(
             ledger_path,
@@ -265,6 +438,7 @@ def run_poll(
         "observed_at_utc": observed_at.isoformat(),
         "injuries_seen": len(current),
         "changes_detected": len(changes),
+        "slack_notifications": slack_result,
         "baseline_created": is_baseline,
         "games_seen": len(games_payload.get("response", [])),
         "output_dir": str(output_dir),
@@ -293,6 +467,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--run-plan", action="store_true", help="Stay alive and execute the remaining scheduled pilot cycles")
     parser.add_argument("--window-start", help="Only run cycles at/after this local HH:MM time")
     parser.add_argument("--window-end", help="Only run cycles at/before this local HH:MM time")
+    parser.add_argument("--slack-test", action="store_true", help="Send one safe deployment-test notification")
     return parser.parse_args(argv)
 
 
@@ -311,6 +486,28 @@ def main(argv: list[str] | None = None) -> int:
     if len(plan) > DEFAULT_DAILY_CAP - DEFAULT_RESERVE:
         raise RuntimeError(f"Plan has {len(plan)} calls; maximum allowed is {DEFAULT_DAILY_CAP - DEFAULT_RESERVE}")
     print(json.dumps({"planned_requests": len(plan), "reserve": DEFAULT_DAILY_CAP - len(plan), "plan": str(args.plan_csv)}))
+    if args.slack_test:
+        webhook_url = os.getenv("SLACK_INJURY_WEBHOOK")
+        if not webhook_url:
+            print("SLACK_INJURY_WEBHOOK is required for the Slack test.", file=sys.stderr)
+            return 2
+        post_slack_payload(
+            webhook_url,
+            {
+                "text": "NFL Injury Monitor connected successfully.",
+                "blocks": [
+                    {
+                        "type": "section",
+                        "text": {
+                            "type": "mrkdwn",
+                            "text": "\u2705 *NFL Injury Monitor connected*\nTest notification successful. Live alerts will post only when a new injury-feed change is detected.",
+                        },
+                    }
+                ],
+            },
+        )
+        print(json.dumps({"slack_test": "SENT"}))
+        return 0
     if args.dry_run and not args.once and not args.run_plan:
         return 0
     api_key = os.getenv("API_SPORTS_KEY")
