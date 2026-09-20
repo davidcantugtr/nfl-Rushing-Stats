@@ -1,0 +1,124 @@
+name: API-Sports NFL injury pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      segment:
+        description: Game-day segment to run
+        required: true
+        default: noon
+        type: choice
+        options:
+          - noon
+          - late
+          - night
+  schedule:
+    # Start ten minutes before each segment. Times are UTC for CDT on 2026-09-20.
+    - cron: "35 16 * * 0"
+    - cron: "45 19 * * 0"
+    - cron: "50 23 * * 0"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: api-sports-injury-pilot
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      PILOT_DATE: "2026-09-20"
+      API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
+      API_SPORTS_NFL_LEAGUE_ID: "1"
+      OUTPUT_DIR: data/live/api_sports/2026-09-20
+    steps:
+      - name: Select pilot segment
+        id: gate
+        shell: bash
+        run: |
+          event_name='${{ github.event_name }}'
+          schedule='${{ github.event.schedule }}'
+          segment='${{ inputs.segment }}'
+          local_date="$(TZ=America/Chicago date +%F)"
+
+          if [[ "$event_name" != "workflow_dispatch" && "$local_date" != "$PILOT_DATE" ]]; then
+            echo "active=false" >> "$GITHUB_OUTPUT"
+            echo "Scheduled run ignored outside the one-day pilot."
+            exit 0
+          fi
+
+          if [[ "$event_name" != "workflow_dispatch" ]]; then
+            case "$schedule" in
+              "35 16 * * 0") segment=noon ;;
+              "45 19 * * 0") segment=late ;;
+              "50 23 * * 0") segment=night ;;
+              *) echo "Unknown schedule: $schedule" >&2; exit 1 ;;
+            esac
+          fi
+
+          case "$segment" in
+            noon)  start=11:45; end=14:45 ;;
+            late)  start=14:55; end=18:45 ;;
+            night) start=19:00; end=22:45 ;;
+            *) echo "Unknown segment: $segment" >&2; exit 1 ;;
+          esac
+
+          echo "active=true" >> "$GITHUB_OUTPUT"
+          echo "segment=$segment" >> "$GITHUB_OUTPUT"
+          echo "start=$start" >> "$GITHUB_OUTPUT"
+          echo "end=$end" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.active == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.active == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Restore cumulative pilot state
+        if: steps.gate.outputs.active == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.OUTPUT_DIR }}
+          key: api-sports-pilot-${{ env.PILOT_DATE }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            api-sports-pilot-${{ env.PILOT_DATE }}-
+
+      - name: Verify API key
+        if: steps.gate.outputs.active == 'true'
+        shell: bash
+        run: |
+          if [[ -z "$API_SPORTS_KEY" ]]; then
+            echo "Repository secret API_SPORTS_KEY is not configured." >&2
+            exit 1
+          fi
+
+      - name: Run ${{ steps.gate.outputs.segment }} polling segment
+        if: steps.gate.outputs.active == 'true'
+        run: >-
+          python src/api_sports_injury_monitor.py
+          --date "$PILOT_DATE"
+          --output-dir "$OUTPUT_DIR"
+          --run-plan
+          --window-start "${{ steps.gate.outputs.start }}"
+          --window-end "${{ steps.gate.outputs.end }}"
+
+      - name: Save cumulative pilot state
+        if: always() && steps.gate.outputs.active == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ env.OUTPUT_DIR }}
+          key: api-sports-pilot-${{ env.PILOT_DATE }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Upload segment evidence
+        if: always() && steps.gate.outputs.active == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-sports-${{ env.PILOT_DATE }}-${{ steps.gate.outputs.segment }}-${{ github.run_id }}
+          path: ${{ env.OUTPUT_DIR }}
+          if-no-files-found: warn
+          retention-days: 14
