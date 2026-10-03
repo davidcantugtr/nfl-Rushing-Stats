@@ -1,0 +1,29 @@
+week,date,offense,defense,overall_off_rank,overall_def_rank,overall_edge,pass_off_rank,pass_def_rank,pass_edge,rush_off_rank,rush_def_rank,rush_edge,pressure_off_rank,pressure_def_rank,pressure_edge,explosive_off_rank,explosive_def_rank,explosive_edge,source_verified
+4,2026-10-04,IND,WAS,11,27,Big offense edge,17,30,Offense edge,7,8,Even,5,12,Even,14,23,Offense edge,2026-10-02
+4,2026-10-04,WAS,IND,20,30,Offense edge,18,27,Offense edge,26,28,Even,23,23,Even,21,28,Even,2026-10-02
+4,2026-10-04,ARI,NYG,12,24,Offense edge,12,23,Offense edge,14,30,Big offense edge,13,32,Big offense edge,30,21,Defense edge,2026-10-02
+4,2026-10-04,NYG,ARI,24,26,Even,24,29,Even,17,21,Even,20,29,Offense edge,25,26,Even,2026-10-02
+4,2026-10-04,DAL,HOU,6,3,Even,3,3,Even,13,4,Defense edge,19,5,Defense edge,24,24,Even,2026-10-02
+4,2026-10-04,HOU,DAL,27,32,Even,21,32,Offense edge,28,26,Even,8,19,Offense edge,18,27,Offense edge,2026-10-02
+4,2026-10-04,GB,TB,18,8,Defense edge,15,13,Even,25,3,Big defense edge,30,30,Even,9,16,Even,2026-10-02
+4,2026-10-04,TB,GB,30,29,Even,30,21,Defense edge,20,32,Offense edge,9,21,Offense edge,32,10,Big defense edge,2026-10-02
+4,2026-10-04,JAX,CIN,8,25,Big offense edge,11,28,Big offense edge,5,20,Offense edge,10,14,Even,10,31,Big offense edge,2026-10-02
+4,2026-10-04,CIN,JAX,10,10,Even,14,11,Even,6,9,Even,2,9,Even,11,18,Even,2026-10-02
+4,2026-10-04,LA,PHI,4,14,Offense edge,9,10,Even,4,18,Offense edge,14,13,Even,3,15,Offense edge,2026-10-02
+4,2026-10-04,PHI,LA,25,6,Big defense edge,26,5,Big defense edge,18,15,Even,24,7,Big defense edge,16,3,Defense edge,2026-10-02
+4,2026-10-04,NE,BUF,13,19,Even,10,19,Offense edge,24,27,Even,27,10,Big defense edge,8,22,Offense edge,2026-10-02
+4,2026-10-04,BUF,NE,2,12,Offense edge,2,7,Even,1,22,Big offense edge,22,17,Even,1,5,Even,2026-10-02
+4,2026-10-04,NYJ,CHI,15,22,Even,13,17,Even,27,31,Even,26,22,Even,23,29,Even,2026-10-02
+4,2026-10-04,CHI,NYJ,9,23,Offense edge,5,25,Big offense edge,12,23,Offense edge,25,31,Even,6,6,Even,2026-10-02
+4,2026-10-04,TEN,BAL,29,13,Big defense edge,29,12,Big defense edge,23,16,Even,15,26,Offense edge,28,17,Defense edge,2026-10-02
+4,2026-10-04,BAL,TEN,3,17,Offense edge,7,20,Offense edge,3,13,Offense edge,31,27,Even,2,11,Offense edge,2026-10-02
+4,2026-10-04,MIA,MIN,31,1,Big defense edge,28,1,Big defense edge,32,2,Big defense edge,7,1,Even,20,12,Defense edge,2026-10-02
+4,2026-10-04,MIN,MIA,32,31,Even,32,31,Even,22,17,Even,18,24,Even,29,30,Even,2026-10-02
+4,2026-10-04,DEN,SF,16,21,Even,22,18,Even,9,29,Big offense edge,21,25,Even,17,2,Defense edge,2026-10-02
+4,2026-10-04,SF,DEN,1,4,Even,1,2,Even,10,11,Even,4,6,Even,4,7,Even,2026-10-02
+4,2026-10-04,KC,LV,7,18,Offense edge,8,22,Offense edge,8,19,Offense edge,6,16,Offense edge,7,14,Even,2026-10-02
+4,2026-10-04,LV,KC,21,5,Big defense edge,16,6,Defense edge,29,6,Big defense edge,11,18,Even,27,4,Big defense edge,2026-10-02
+4,2026-10-04,LAC,SEA,22,2,Big defense edge,25,4,Big defense edge,16,1,Defense edge,29,8,Big defense edge,19,1,Big defense edge,2026-10-02
+4,2026-10-04,SEA,LAC,14,11,Even,6,15,Offense edge,30,5,Big defense edge,16,20,Even,5,13,Offense edge,2026-10-02
+4,2026-10-04,DET,CAR,5,15,Offense edge,4,16,Offense edge,11,12,Even,17,15,Even,12,9,Even,2026-10-02
+4,2026-10-04,CAR,DET,17,28,Offense edge,19,26,Even,21,25,Even,28,4,Big defense edge,13,32,Big offense edge,2026-10-02
