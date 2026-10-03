@@ -1,14 +1,14 @@
-week,rank,player,team,opponent,sharp_rush_eff_rank,espn_w4_carries,espn_w4_rush_yds,neutral_q1_yds_baseline,status,model_note
-4,1,Jahmyr Gibbs,DET,CAR,4,20,101,25.25,ACTIVE,High workload plus favorable Sharp schedule
-4,2,Derrick Henry,BAL,TEN,19,23,103,25.75,ACTIVE,Highest projected carries and yards
-4,3,James Cook III,BUF,NE,16,19,93,23.25,ACTIVE,Strong current efficiency and workload
-4,4,Kenneth Walker III,KC,LV,23,19,88,22.00,ACTIVE,Bellcow workload; harder Sharp side
-4,5,Jonathan Taylor,IND,WAS,29,20,85,21.25,ACTIVE,Volume offsets difficult Sharp rush schedule
-4,6,Aaron Jones Sr.,MIN,MIA,14,21,86,21.50,ACTIVE,High-volume role
-4,7,Jeremiyah Love,ARI,NYG,5,16,72,18.00,ACTIVE,Role ascension plus favorable Sharp schedule
-4,8,Christian McCaffrey,SF,DEN,7,15,68,17.00,ACTIVE,Favorable Sharp schedule with managed workload
-4,9,Chuba Hubbard,CAR,DET,3,16,71,17.75,ACTIVE,Lead role plus top-three Sharp schedule
-4,10,Cam Skattebo,NYG,ARI,18,17,75,18.75,ACTIVE,Current lead role and stable volume
-4,11,Chase Brown,CIN,JAX,26,16,67,16.75,ACTIVE,Volume viable but difficult Sharp schedule
-4,12,Ashton Jeanty,LV,KC,24,17,66,16.50,ACTIVE,Heavy touch base but efficiency concern
-4,13,Javonte Williams,DAL,HOU,28,17,65,16.25,ACTIVE,Volume stable; difficult Sharp rush schedule
+week,rank,player,team,opponent,sharp_rush_eff_rank,season_carries,season_rush_yds,espn_w4_carries,espn_w4_rush_yds,neutral_q1_yds_baseline,script_adjusted_rush_yds,floor,ceiling,history_games,status,availability,model_note
+4,1,Jahmyr Gibbs,DET,CAR,4,65,307,20,101,25.25,25.25,10.806143174345713,39.69385682565429,3,ACTIVE,IN,ELITE; exact 2026 Q1 PBP through prior completed week
+4,2,Derrick Henry,BAL,TEN,19,66,301,23,103,25.75,25.75,19.57,31.93,3,ACTIVE,IN,ELITE; exact 2026 Q1 PBP through prior completed week
+4,3,James Cook III,BUF,NE,16,58,346,19,93,23.25,23.25,17.67,28.83,3,ACTIVE,IN,ELITE; exact 2026 Q1 PBP through prior completed week
+4,4,Kenneth Walker III,KC,LV,23,65,360,19,88,22.0,22.0,16.72,27.28,3,ACTIVE,IN,ELITE; exact 2026 Q1 PBP through prior completed week
+4,5,Jonathan Taylor,IND,WAS,29,66,258,20,85,21.25,21.25,9.657976880630372,32.84202311936963,3,ACTIVE,IN,ELITE; exact 2026 Q1 PBP through prior completed week
+4,6,Aaron Jones Sr.,MIN,MIA,14,52,203,21,86,21.5,21.5,16.34,26.66,3,ACTIVE,IN,PRIME; exact 2026 Q1 PBP through prior completed week
+4,7,Christian McCaffrey,SF,DEN,7,35,166,15,68,17.0,17.0,12.5,21.5,3,ACTIVE,IN,PRIME; exact 2026 Q1 PBP through prior completed week
+4,8,Jeremiyah Love,ARI,NYG,5,41,160,16,72,18.0,18.0,8.493423329084228,27.50657667091577,3,ACTIVE,IN,PRIME; exact 2026 Q1 PBP through prior completed week
+4,9,Chuba Hubbard,CAR,DET,3,41,184,16,71,17.75,17.75,13.25,22.25,3,ACTIVE,IN,PRIME; exact 2026 Q1 PBP through prior completed week
+4,10,Chase Brown,CIN,JAX,26,49,197,16,67,16.75,16.75,12.25,21.25,3,ACTIVE,IN,STRONG; exact 2026 Q1 PBP through prior completed week
+4,11,Ashton Jeanty,LV,KC,24,63,206,17,66,16.5,16.5,11.291833336000085,21.708166663999915,3,ACTIVE,IN,STRONG; exact 2026 Q1 PBP through prior completed week
+4,12,Javonte Williams,DAL,HOU,28,43,169,17,65,16.25,16.25,1.9016551477182553,30.598344852281745,3,ACTIVE,IN,STRONG; exact 2026 Q1 PBP through prior completed week
+4,13,Cam Skattebo,NYG,ARI,18,50,177,17,75,18.75,18.75,14.25,23.25,3,ACTIVE,IN,STRONG; exact 2026 Q1 PBP through prior completed week

@@ -49,8 +49,8 @@ jobs:
       - name: Build compact Excel exports
         run: python src/build_excel_exports.py
 
-      - name: Build Q1, first-half and full-game history and live opportunity board
-        run: python src/build_rushing_windows.py
+      - name: Build current-season Q1, first-half and full-game history and live opportunity board
+        run: python src/build_current_rushing_windows.py
 
       - name: Print reconciliation diagnostics on failure
         if: failure()
