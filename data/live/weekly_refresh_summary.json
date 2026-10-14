@@ -1,0 +1,173 @@
+{
+  "target_week": 6,
+  "completed_week": 5,
+  "row_counts": {
+    "current_week_model": 64,
+    "rb_window_board": 192,
+    "rb_window_game_log": 1119,
+    "weekly_archive": 269,
+    "weekly_results": 269,
+    "usage_leaders": 543,
+    "matchup_pace": 158,
+    "rb_roles": 96,
+    "defense_monitor": 32
+  },
+  "top10": [
+    {
+      "rank": 1,
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "opponent": "CLE",
+      "exp_player_q1_yds": 29.860722152982337,
+      "v05_candidate_score": 90.52611623529413,
+      "prime_label": "ELITE",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 2,
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent": "LV",
+      "exp_player_q1_yds": 25.864282264796312,
+      "v05_candidate_score": 86.89911936134455,
+      "prime_label": "ELITE",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 3,
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "opponent": "CHI",
+      "exp_player_q1_yds": 24.20219347342494,
+      "v05_candidate_score": 79.85019486421938,
+      "prime_label": "PRIME",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 4,
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "opponent": "GB",
+      "exp_player_q1_yds": 23.987285356703456,
+      "v05_candidate_score": 76.50744788235293,
+      "prime_label": "PRIME",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 5,
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "opponent": "ATL",
+      "exp_player_q1_yds": 22.206492436148718,
+      "v05_candidate_score": 74.83529430378519,
+      "prime_label": "PRIME",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 6,
+      "player": "Jeremiyah Love",
+      "team": "ARI",
+      "opponent": "LA",
+      "exp_player_q1_yds": 18.448948008929584,
+      "v05_candidate_score": 74.67902749431234,
+      "prime_label": "PRIME",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 7,
+      "player": "Kenneth Walker III",
+      "team": "KC",
+      "opponent": "LAC",
+      "exp_player_q1_yds": 19.807874756083287,
+      "v05_candidate_score": 69.40373058823529,
+      "prime_label": "STRONG",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 8,
+      "player": "Bucky Irving",
+      "team": "TB",
+      "opponent": "PIT",
+      "exp_player_q1_yds": 16.283307521730187,
+      "v05_candidate_score": 66.17288813512282,
+      "prime_label": "STRONG",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 9,
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "opponent": "IND",
+      "exp_player_q1_yds": 17.303084101931784,
+      "v05_candidate_score": 65.10272527475665,
+      "prime_label": "WATCH",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    },
+    {
+      "rank": 10,
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "opponent": "BAL",
+      "exp_player_q1_yds": 16.96180362396731,
+      "v05_candidate_score": 64.2831381512605,
+      "prime_label": "WATCH",
+      "injury_status": "No RB limitation listed in the early official Week 6 report; Sunday reports incomplete"
+    }
+  ],
+  "latest_accuracy": {
+    "Week": 5,
+    "Slate Date": "Week 5 slate",
+    "Model Version": "v0.5 production candidate",
+    "Elite Picks": 4,
+    "Prime Picks": 1,
+    "Top-10 Overlap": 0.4,
+    "Top-5 Avg Actual Q1 Yds": 15.8,
+    "20+ Hit Rate": 0.5,
+    "25+ Hit Rate": 0.4,
+    "MAE": 8.03546053125,
+    "Spearman": 0.49680565711861135,
+    "Notes": "GRADED 2026-10-14 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 5 ranking"
+  },
+  "public_defense_worst": [
+    {
+      "team": "CAR",
+      "current_q1_rush_yds_allowed_per_game": 45.25,
+      "current_public_rush_def_rank": 32
+    },
+    {
+      "team": "NO",
+      "current_q1_rush_yds_allowed_per_game": 41.2,
+      "current_public_rush_def_rank": 31
+    },
+    {
+      "team": "DEN",
+      "current_q1_rush_yds_allowed_per_game": 40.8,
+      "current_public_rush_def_rank": 30
+    },
+    {
+      "team": "DAL",
+      "current_q1_rush_yds_allowed_per_game": 35.4,
+      "current_public_rush_def_rank": 29
+    },
+    {
+      "team": "CLE",
+      "current_q1_rush_yds_allowed_per_game": 34.4,
+      "current_public_rush_def_rank": 28
+    }
+  ],
+  "validation": {
+    "schedule_games": 14,
+    "schedule_team_rows": 28,
+    "bye_teams": [
+      "CIN",
+      "DET",
+      "MIA",
+      "MIN"
+    ],
+    "reciprocal_alignment": true,
+    "model_unique": true,
+    "board_unique": true,
+    "sharp_stale": true,
+    "injury_reports_incomplete_for_sunday": true
+  }
+}
