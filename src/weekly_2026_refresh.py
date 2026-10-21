@@ -428,7 +428,7 @@ def build_model(depth: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
     defense["current_q1_rush_yds_allowed_per_game"] = defense.q1_allowed
     defense["current_public_rush_def_rank"] = defense.public_def_rank
     defense["model_def_input"] = defense.public_def_rank
-    defense["model_source_used"] = "nflverse 2026 Weeks 1–5 Q1 rushing allowed"
+    defense["model_source_used"] = "nflverse 2026 Weeks 1–6 Q1 rushing allowed"
     defense["integrity_note"] = "Sharp proprietary Week 4 value preserved but not guessed; completed Weeks 1-6 public rank used for Week 7"
     defense = defense[["team", "sharp_rush_def_rank", "sharp_last_verified", "sharp_status", "current_q1_rush_yds_allowed_per_game", "current_public_rush_def_rank", "model_def_input", "model_source_used", "integrity_note"]].sort_values("team")
     return model, dash, defense
@@ -472,7 +472,7 @@ def build_board(model: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
                 "neutral_rush_yds": base_player, "leading_rush_yds": base_player * 1.10, "script_adjusted_rush_yds": base_player,
                 "floor": max(0, base_player - 0.75 * sd), "ceiling": base_player + 0.75 * sd,
                 "model_benchmark_yards": benchmark, "model_benchmark_probability": prob,
-                "probability_source": "2025 baseline + completed 2026 Weeks 1–5 window distribution",
+                "probability_source": "2025 baseline + completed 2026 Weeks 1–6 window distribution",
                 "sportsbook_market": "", "consensus_line": np.nan, "sportsbook_over_probability": np.nan,
                 "model_over_probability": np.nan, "probability_edge": np.nan, "sportsbook_count": 0,
                 "odds_status": "MODEL ONLY — NO VERIFIED LINE", "opportunity_score": score, "tier": tier,
