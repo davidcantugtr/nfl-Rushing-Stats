@@ -1,6 +1,7 @@
 Week,Slate Date,Model Version,Elite Picks,Prime Picks,Top-10 Overlap,Top-5 Avg Actual Q1 Yds,20+ Hit Rate,25+ Hit Rate,MAE,Spearman,Notes
-1,Week 1 slate,v0.5 production candidate,2,7,0.400000,12.600000,0.200000,0.100000,7.209925,0.561725,GRADED 2026-10-14 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 1 ranking
-2,Week 2 slate,v0.5 production candidate,5,1,0.400000,21.000000,0.400000,0.400000,8.972764,0.437967,GRADED 2026-10-14 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 2 ranking
-3,Week 3 slate,v0.5 production candidate,2,4,0.500000,18.600000,0.600000,0.400000,7.871823,0.593301,GRADED 2026-10-14 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 3 ranking
-4,Week 4 slate,v0.5 production candidate,0,0,0.800000,10.400000,0.200000,0.100000,11.269231,0.142857,GRADED 2026-10-14 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 4 ranking
-5,Week 5 slate,v0.5 production candidate,4,1,0.400000,15.800000,0.500000,0.400000,8.035461,0.496806,GRADED 2026-10-14 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 5 ranking
+1,Week 1 slate,v0.5 production candidate,2,7,0.400000,12.600000,0.200000,0.100000,7.209925,0.561725,GRADED 2026-10-21 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 1 ranking
+2,Week 2 slate,v0.5 production candidate,5,1,0.400000,21.000000,0.400000,0.400000,8.972764,0.437967,GRADED 2026-10-21 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 2 ranking
+3,Week 3 slate,v0.5 production candidate,2,4,0.500000,18.600000,0.600000,0.400000,7.871823,0.593301,GRADED 2026-10-21 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 3 ranking
+4,Week 4 slate,v0.5 production candidate,0,0,0.800000,10.400000,0.200000,0.100000,11.269231,0.142857,GRADED 2026-10-21 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 4 ranking
+5,Week 5 slate,v0.5 production candidate,4,1,0.400000,15.800000,0.500000,0.400000,8.035461,0.496806,GRADED 2026-10-21 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 5 ranking
+6,Week 6 slate,v0.5 production candidate,2,4,0.400000,25.600000,0.200000,0.200000,7.730716,0.430975,GRADED 2026-10-21 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 6 ranking
