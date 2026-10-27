@@ -21,6 +21,23 @@ WINDOWS = {
     "Full Game": {"quarters": {1, 2, 3, 4, 5}, "benchmark": 60.0},
 }
 
+DEFAULT_SHARP_RUSH_DEF_RANK = 16
+
+
+def resolve_sharp_rush_def_rank(player: pd.Series) -> tuple[int, str]:
+    """Return a valid 1-32 defensive rank and the source used.
+
+    Missing, non-numeric, infinite, and out-of-range values fall through to
+    the legacy Sharp column and finally to the neutral league midpoint.
+    """
+    for column in ("sharp_rush_eff_rank", "sharp_def_rank"):
+        value = pd.to_numeric(pd.Series([player.get(column, np.nan)]), errors="coerce").iloc[0]
+        if pd.notna(value) and np.isfinite(value):
+            rank = int(round(float(value)))
+            if 1 <= rank <= 32:
+                return rank, column
+    return DEFAULT_SHARP_RUSH_DEF_RANK, "default_midpoint"
+
 
 def flag(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series, errors="coerce").fillna(0).eq(1)
@@ -194,7 +211,7 @@ def build_live_board(
     rows = []
     for _, player in current.iterrows():
         rank = int(player.get("rank", 99))
-        sharp_rank = int(player.get("sharp_rush_eff_rank", player.get("sharp_def_rank", 16)))
+        sharp_rank, sharp_rank_source = resolve_sharp_rush_def_rank(player)
         for window, config in WINDOWS.items():
             player_hist = one_row(
                 rb_summary, player_key=player["player_key"], team=player["team"], window=window
@@ -246,7 +263,8 @@ def build_live_board(
                 "site": player.get("site", ""), "player": player["player"],
                 "depth_role": player.get("depth_role", "Tracked RB"),
                 "backfield_type": player.get("backfield_type", "Current role"), "window": window,
-                "sharp_rush_def_rank": sharp_rank, "carry_share": carry_share,
+                "sharp_rush_def_rank": sharp_rank, "sharp_rank_source": sharp_rank_source,
+                "carry_share": carry_share,
                 "base_team_rush_yds": team_yards, "base_player_carries": carries,
                 "base_player_rush_yds": baseline, "team_spread": np.nan, "game_script": "UNKNOWN",
                 "trailing_probability": 0.30, "neutral_probability": 0.40, "leading_probability": 0.30,
@@ -265,6 +283,16 @@ def build_live_board(
                 "availability": player.get("availability", "IN"),
             })
     board = pd.DataFrame(rows).sort_values(["window", "opportunity_score"], ascending=[True, False])
+    if not board["sharp_rush_def_rank"].between(1, 32).all():
+        raise AssertionError("Live board contains an invalid defensive rank")
+    fallback_players = board.loc[
+        board["sharp_rank_source"].eq("default_midpoint"), "player"
+    ].drop_duplicates()
+    if not fallback_players.empty:
+        print(
+            "WARNING: neutral defensive-rank fallback applied to "
+            f"{len(fallback_players)} player(s): {', '.join(fallback_players.astype(str))}"
+        )
     board.to_csv(LIVE / "rb_window_opportunity_board.csv", index=False, float_format="%.6f")
     return board
 
