@@ -63,7 +63,7 @@ jobs:
         run: python src/debug_q1_discrepancies.py
 
       - name: Commit validated outputs
-        if: success()
+        if: success() && github.event_name != 'pull_request'
         run: |
           if [ -z "$(git status --porcelain -- data/processed data/live)" ]; then
             echo 'No processed or live data changes.'
