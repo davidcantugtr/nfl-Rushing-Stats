@@ -1,65 +1,65 @@
-week,rank,player,player_id,team,opponent,site,depth_role,backfield_type,sharp_def_rank,public_def_rank,def_input_used,final_carry_share,exp_q1_carries,proj_team_q1_yds,exp_player_q1_yds,floor,ceiling,prob20_proxy,prob25_proxy,v04_score,v05_candidate_score,v05_delta,prime_label,injury_status
-8,1,Kenneth Walker III,00-0038134,KC,DEN,A,RB1,Bellcow,10.000000,29.000000,2026 public Q1 rush allowed rank,0.784174,5.069451,37.127157,29.900131,20.445397,39.354865,0.783870,0.651253,85.414284,85.414284,0.000000,ELITE,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,2,Bijan Robinson,00-0038542,ATL,TB,A,RB1,Strong RB1,12.000000,19.000000,2026 public Q1 rush allowed rank,0.673358,4.181326,34.795714,25.351885,7.137249,43.566521,0.587208,0.505780,84.108414,84.108414,0.000000,ELITE,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,3,Bucky Irving,00-0039361,TB,ATL,H,RB1,Strong RB1 / QB diluted,2.000000,27.000000,2026 public Q1 rush allowed rank,0.630860,4.713694,36.102666,23.908836,14.082217,33.735455,0.617276,0.466814,80.515975,80.515975,0.000000,PRIME,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,4,Jeremiyah Love,00-0041027,ARI,DAL,A,RB1,RB1A/RB1B,28.000000,28.000000,2026 public Q1 rush allowed rank,0.494705,3.574554,38.540718,21.398402,12.602662,30.194142,0.547457,0.379382,80.288787,80.288787,0.000000,PRIME,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,5,Jaylen Warren,00-0037228,PIT,CLE,H,RB1,Strong RB1,11.000000,32.000000,2026 public Q1 rush allowed rank,0.647747,4.447682,37.745412,26.168698,14.494717,37.842679,0.654062,0.529926,77.707839,77.707839,0.000000,PRIME,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,6,Derrick Henry,00-0032764,BAL,BUF,A,RB1,Bellcow,16.000000,9.000000,2026 public Q1 rush allowed rank,0.714405,5.362740,32.150567,22.120873,9.305035,34.936711,0.549388,0.433099,77.649899,77.649899,0.000000,PRIME,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,7,James Cook III,00-0037248,BUF,BAL,H,RB1,Strong RB1 / QB diluted,19.000000,7.000000,2026 public Q1 rush allowed rank,0.634654,4.082943,29.360553,18.914135,7.712867,30.115402,0.471020,0.341824,72.339576,72.339576,0.000000,STRONG,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,8,Tony Pollard,00-0035261,TEN,CIN,A,RB1,Bellcow,26.000000,12.000000,2026 public Q1 rush allowed rank,0.727204,4.743579,25.602301,19.395850,1.113203,37.678497,0.490114,0.409086,71.805498,71.805498,0.000000,STRONG,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,9,Jahmyr Gibbs,00-0039139,DET,MIN,H,RB1,Bellcow,14.000000,14.000000,2026 public Q1 rush allowed rank,0.830671,4.024681,22.829196,19.506812,9.094950,29.918674,0.485830,0.346166,66.302910,66.302910,0.000000,STRONG,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,10,D'Andre Swift,00-0036275,CHI,SEA,A,RB1,Strong RB1 / QB diluted,25.000000,8.000000,2026 public Q1 rush allowed rank,0.593707,4.764375,28.828170,18.526356,4.958201,32.094511,0.467539,0.360231,65.210245,65.210245,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,11,Javonte Williams,00-0036997,DAL,ARI,H,RB1,Bellcow,5.000000,2.000000,2026 public Q1 rush allowed rank,0.741842,4.067975,21.119800,16.214684,4.946912,27.482457,0.400537,0.279353,64.853130,64.853130,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,12,Ollie Gordon II,00-0040198,MIA,NE,H,RB1,RB1A/RB1B / QB diluted,13.000000,24.000000,2026 public Q1 rush allowed rank,0.529176,3.995275,37.874216,21.642192,14.461920,28.822464,0.568097,0.362894,63.272230,63.272230,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,13,Kyren Williams,00-0037840,LA,LAC,H,RB1,RB1A/RB1B,32.000000,20.000000,2026 public Q1 rush allowed rank,0.543748,3.318349,30.091317,17.631749,6.712650,28.550848,0.435390,0.306392,61.620049,61.620049,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,14,Aaron Jones Sr.,00-0033293,MIN,DET,A,RB2,RB1A/RB1B / QB diluted,4.000000,17.000000,2026 public Q1 rush allowed rank,0.529471,3.966878,28.130210,15.497666,9.320196,21.675135,0.292319,0.124318,59.615564,59.615564,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,15,MarShawn Lloyd,00-0039811,GB,CAR,H,RB2,RB1A/RB1B / QB diluted,3.000000,31.000000,2026 public Q1 rush allowed rank,0.506993,3.634767,33.797060,18.565269,12.407247,24.723291,0.430642,0.216608,58.559077,58.559077,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,16,Quinshon Judkins,00-0040784,CLE,PIT,A,RB1,Strong RB1 / QB diluted,8.000000,5.000000,2026 public Q1 rush allowed rank,0.636155,3.513284,19.200766,12.005642,2.790613,21.220670,0.257636,0.145120,58.320541,58.320541,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,17,Jonathan Taylor,00-0036223,IND,JAX,A,RB1,Bellcow,21.000000,1.000000,2026 public Q1 rush allowed rank,0.771009,4.089208,17.720353,13.527403,2.325667,24.729139,0.332375,0.221203,58.000735,58.000735,0.000000,WATCH,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,18,Ashton Jeanty,00-0040122,LV,NYJ,A,RB1,Bellcow,17.000000,18.000000,2026 public Q1 rush allowed rank,0.697828,4.236518,22.024182,14.042762,8.409071,19.676452,0.213868,0.072322,57.987587,57.987587,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,19,Chuba Hubbard,00-0036555,CAR,GB,A,RB1,Bellcow / QB diluted,31.000000,21.000000,2026 public Q1 rush allowed rank,0.747199,3.983598,22.353224,16.507475,11.802669,21.212280,0.288850,0.087899,56.894434,56.894434,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,20,Bhayshul Tuten,00-0040719,JAX,IND,H,RB1,RB1A/RB1B,29.000000,23.000000,2026 public Q1 rush allowed rank,0.539510,3.528503,30.413114,15.176747,10.676747,19.676747,0.210734,0.050793,56.203902,56.203902,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,21,Breece Hall,00-0038120,NYJ,LV,H,RB1,RB1A/RB1B,24.000000,26.000000,2026 public Q1 rush allowed rank,0.381480,2.509916,28.050597,8.474399,1.435585,15.513212,0.109709,0.039133,53.419097,53.419097,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,22,Braelon Allen,00-0039794,NYJ,LV,H,RB2,RB1A/RB1B,24.000000,26.000000,2026 public Q1 rush allowed rank,0.422364,2.778905,28.050597,14.073908,1.141107,27.006709,0.365549,0.263162,52.931664,52.931664,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,23,Chase Brown,00-0038597,CIN,TEN,H,RB1,Strong RB1,6.000000,10.000000,2026 public Q1 rush allowed rank,0.660798,3.668727,19.106847,11.937178,6.110737,17.763619,0.149664,0.046334,49.992372,49.992372,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,24,Omarion Hampton,00-0040666,LAC,LA,A,RB1,RB1A/RB1B / QB diluted,15.000000,15.000000,2026 public Q1 rush allowed rank,0.509210,3.498074,24.938282,12.278940,7.005636,17.552245,0.136073,0.035205,49.390430,49.390430,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,25,Rico Dowdle,00-0036139,PIT,CLE,H,RB2,Strong RB1,11.000000,32.000000,2026 public Q1 rush allowed rank,0.219327,1.505982,37.745412,6.559362,2.059362,11.059362,0.012542,0.001058,47.948435,47.948435,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,26,Tyler Allgeier,00-0037263,ARI,DAL,A,RB2,RB1A/RB1B,28.000000,28.000000,2026 public Q1 rush allowed rank,0.308264,2.227398,38.540718,9.548575,1.672879,17.424271,0.159799,0.070587,47.791606,47.791606,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,27,Saquon Barkley,00-0034844,PHI,WAS,A,RB1,RB1A/RB1B / QB diluted,1.000000,4.000000,2026 public Q1 rush allowed rank,0.421090,2.537333,21.009895,9.951056,0.000000,22.743906,0.277886,0.188816,47.102651,47.102651,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,28,Chris Rodriguez Jr.,00-0038611,JAX,IND,H,RB2,RB1A/RB1B,29.000000,23.000000,2026 public Q1 rush allowed rank,0.278257,1.819853,30.413114,9.694091,0.000000,19.561831,0.216725,0.122348,46.577321,46.577321,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,29,Blake Corum,00-0039738,LA,LAC,H,RB2,RB1A/RB1B,32.000000,20.000000,2026 public Q1 rush allowed rank,0.374827,2.287469,30.091317,10.009390,4.501326,15.517453,0.086858,0.020616,45.286454,45.286454,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,30,Jordan Mason,00-0037525,MIN,DET,A,RB1,RB1A/RB1B / QB diluted,4.000000,17.000000,2026 public Q1 rush allowed rank,0.228638,1.712990,28.130210,5.828087,0.000000,12.652130,0.059667,0.017554,42.951887,42.951887,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,31,Rhamondre Stevenson,00-0036875,NE,MIA,A,RB1,RB1A/RB1B / QB diluted,27.000000,6.000000,2026 public Q1 rush allowed rank,0.432628,2.725313,25.017448,8.991741,2.345798,15.637684,0.107065,0.035417,42.440948,42.440948,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,32,Rachaad White,00-0037256,WAS,PHI,H,RB1,RB1A/RB1B / QB diluted,22.000000,16.000000,2026 public Q1 rush allowed rank,0.489682,3.059075,28.527588,12.254563,7.754563,16.754563,0.098368,0.016825,42.142943,42.142943,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,33,Emanuel Wilson,00-0038797,SEA,CHI,H,RB1,Strong RB1 / QB diluted,9.000000,3.000000,2026 public Q1 rush allowed rank,0.651440,3.596879,19.038953,12.293214,7.793214,16.793214,0.099490,0.017096,42.129729,42.129729,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,34,RJ Harvey,00-0040730,DEN,KC,H,RB2,RB1A/RB1B / QB diluted,23.000000,22.000000,2026 public Q1 rush allowed rank,0.462992,2.684121,22.967927,11.899826,6.937791,16.861861,0.110415,0.023848,41.271795,41.271795,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,35,Josh Jacobs,00-0035700,GB,CAR,H,RB1,RB1A/RB1B / QB diluted,3.000000,31.000000,2026 public Q1 rush allowed rank,0.173007,1.240329,33.797060,4.416731,0.000000,8.916731,0.004699,0.000301,41.260302,41.260302,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,36,TreVeyon Henderson,00-0040734,NE,MIA,A,RB2,RB1A/RB1B / QB diluted,27.000000,6.000000,2026 public Q1 rush allowed rank,0.297391,1.873399,25.017448,9.271476,0.000000,21.176431,0.249557,0.160872,39.157282,39.157282,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,37,Brian Robinson Jr.,00-0037746,ATL,TB,A,RB2,Strong RB1,12.000000,19.000000,2026 public Q1 rush allowed rank,0.243915,1.514628,34.795714,6.565268,1.650600,11.479935,0.020172,0.002452,38.318417,38.318417,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,38,Kenny Gainwell,00-0036919,TB,ATL,H,RB2,Strong RB1 / QB diluted,2.000000,27.000000,2026 public Q1 rush allowed rank,0.141732,1.059001,36.102666,3.983816,0.000000,8.483816,0.003800,0.000230,33.279879,33.279879,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,39,Jaylen Wright,00-0039874,MIA,NE,H,RB2,RB1A/RB1B / QB diluted,13.000000,24.000000,2026 public Q1 rush allowed rank,0.150824,1.138725,37.874216,4.112275,0.000000,8.612275,0.004049,0.000250,32.821770,32.821770,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,40,Emmett Johnson,00-0041013,KC,DEN,A,RB2,Bellcow,10.000000,29.000000,2026 public Q1 rush allowed rank,0.101334,0.655093,37.127157,2.976235,0.000000,7.476235,0.002275,0.000121,32.006362,32.006362,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,41,Austin Ekeler,00-0033699,WAS,PHI,H,RB2,RB1A/RB1B / QB diluted,22.000000,16.000000,2026 public Q1 rush allowed rank,0.190318,1.188925,28.527588,7.144197,2.644197,11.644197,0.016071,0.001460,31.273020,31.273020,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,42,Kyle Monangai,00-0040236,CHI,SEA,A,RB2,Strong RB1 / QB diluted,25.000000,8.000000,2026 public Q1 rush allowed rank,0.200142,1.606097,28.828170,4.358862,0.000000,10.636698,0.030838,0.006832,30.180664,30.180664,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,43,Dameon Pierce,00-0037258,PHI,WAS,A,RB2,RB1A/RB1B / QB diluted,1.000000,4.000000,2026 public Q1 rush allowed rank,0.258910,1.560096,21.009895,4.335673,0.000000,8.835673,0.004518,0.000287,29.018746,29.018746,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,44,Justice Hill,00-0034975,BAL,BUF,A,RB2,Bellcow,16.000000,9.000000,2026 public Q1 rush allowed rank,0.112091,0.841424,32.150567,4.451456,0.000000,10.670505,0.030389,0.006604,26.752594,26.752594,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,45,Jonah Coleman,00-0041496,DEN,KC,H,RB1,RB1A/RB1B / QB diluted,23.000000,22.000000,2026 public Q1 rush allowed rank,0.217008,1.258070,22.967927,3.718364,0.000000,8.218364,0.003328,0.000195,25.981596,25.981596,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,46,Mike Washington Jr.,00-0040878,LV,NYJ,A,RB2,Bellcow,17.000000,18.000000,2026 public Q1 rush allowed rank,0.162517,0.986643,22.024182,4.905629,0.000000,9.954278,0.012470,0.001417,25.494035,25.494035,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,47,Keaton Mitchell,00-0038454,LAC,LA,A,RB2,RB1A/RB1B / QB diluted,15.000000,15.000000,2026 public Q1 rush allowed rank,0.170790,1.173259,24.938282,4.679092,0.179092,9.179092,0.005333,0.000354,25.061700,25.061700,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,48,Samaje Perine,00-0033526,CIN,TEN,H,RB2,Strong RB1,6.000000,10.000000,2026 public Q1 rush allowed rank,0.234351,1.301107,19.106847,5.166302,0.000000,11.009158,0.028450,0.005450,24.655794,24.655794,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,49,Tyjae Spears,00-0039032,TEN,CIN,A,RB2,Bellcow,26.000000,12.000000,2026 public Q1 rush allowed rank,0.125813,0.820684,25.602301,2.443344,0.000000,6.943344,0.001716,0.000085,20.468756,20.468756,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,50,Tyler Goodson,00-0037120,DAL,ARI,H,RB2,Bellcow,5.000000,2.000000,2026 public Q1 rush allowed rank,0.145971,0.800446,21.119800,2.535738,0.000000,7.479875,0.004034,0.000328,18.827759,18.827759,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,51,Ty Johnson,00-0035537,BUF,BAL,H,RB2,Strong RB1 / QB diluted,19.000000,7.000000,2026 public Q1 rush allowed rank,0.045346,0.291724,29.360553,1.051041,0.000000,5.551041,0.000794,0.000033,18.426631,18.426631,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,52,Sione Vaki,00-0039364,DET,MIN,H,RB2,Bellcow,14.000000,14.000000,2026 public Q1 rush allowed rank,0.109329,0.529711,22.829196,1.952633,0.000000,6.452633,0.001315,0.000061,17.798056,17.798056,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,53,Trevor Etienne,00-0040644,CAR,GB,A,RB2,Bellcow / QB diluted,31.000000,21.000000,2026 public Q1 rush allowed rank,0.049718,0.265067,22.353224,1.306207,0.000000,5.806207,0.000918,0.000039,16.405222,16.405222,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,54,Dylan Sampson,00-0040162,CLE,PIT,A,RB2,Strong RB1 / QB diluted,8.000000,5.000000,2026 public Q1 rush allowed rank,0.053771,0.296961,19.200766,1.241462,0.000000,5.741462,0.000885,0.000038,13.767435,13.767435,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,55,Zach Charbonnet,00-0039165,SEA,CHI,H,RB2,Strong RB1 / QB diluted,9.000000,3.000000,2026 public Q1 rush allowed rank,0.028560,0.157692,19.038953,0.653274,0.000000,5.153274,0.000631,0.000025,11.591122,11.591122,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,56,Seth McGowan,00-0041125,IND,JAX,A,RB2,Bellcow,21.000000,1.000000,2026 public Q1 rush allowed rank,0.098741,0.523695,17.720353,1.884874,0.000000,6.384874,0.001267,0.000058,10.580196,10.580196,0.000000,PASS,No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed
-8,57,David Montgomery,00-0035685,HOU,BYE,B,RB1,BYE,,,BYE — no matchup,0.492142,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,58,Woody Marks,00-0040583,HOU,BYE,B,RB2,BYE,,,BYE — no matchup,0.357947,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,59,Alvin Kamara,00-0033906,NO,BYE,B,RB1,BYE,,,BYE — no matchup,0.358254,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,60,Kendre Miller,00-0038551,NO,BYE,B,RB2,BYE,,,BYE — no matchup,0.321746,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,61,Cam Skattebo,00-0040715,NYG,BYE,B,RB1,BYE,,,BYE — no matchup,0.559462,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,62,Devin Singletary,00-0035250,NYG,BYE,B,RB2,BYE,,,BYE — no matchup,0.120538,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,63,Christian McCaffrey,00-0033280,SF,BYE,B,RB1,BYE,,,BYE — no matchup,0.482391,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
-8,64,Kaelon Black,00-0041052,SF,BYE,B,RB2,BYE,,,BYE — no matchup,0.335289,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,PASS,BYE
+week,player,team,opponent,script_adjusted_rush_yds,history_games,model_note
+8,Kenneth Walker III,KC,DEN,28.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Bijan Robinson,ATL,TB,32.142857142857146,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Bucky Irving,TB,ATL,24.857142857142854,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jeremiyah Love,ARI,DAL,27.6,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jaylen Warren,PIT,CLE,20.571428571428573,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Derrick Henry,BAL,BUF,25.857142857142854,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,James Cook III,BUF,BAL,23.166666666666668,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Tony Pollard,TEN,CIN,25.0,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jahmyr Gibbs,DET,MIN,20.833333333333332,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,D'Andre Swift,CHI,SEA,23.714285714285715,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Javonte Williams,DAL,ARI,21.857142857142858,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Ollie Gordon II,MIA,NE,18.0,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Kyren Williams,LA,LAC,15.857142857142858,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Aaron Jones Sr.,MIN,DET,18.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,MarShawn Lloyd,GB,CAR,6.857142857142857,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Quinshon Judkins,CLE,PIT,20.666666666666668,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jonathan Taylor,IND,JAX,17.857142857142858,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Ashton Jeanty,LV,NYJ,12.142857142857142,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Chuba Hubbard,CAR,GB,12.333333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Bhayshul Tuten,JAX,IND,15.0,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Breece Hall,NYJ,LV,15.0,3,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Braelon Allen,NYJ,LV,15.142857142857142,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Chase Brown,CIN,TEN,9.833333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Omarion Hampton,LAC,LA,11.833333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Rico Dowdle,PIT,CLE,8.75,4,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Tyler Allgeier,ARI,DAL,8.0,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Saquon Barkley,PHI,WAS,16.0,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Chris Rodriguez Jr.,JAX,IND,11.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Blake Corum,LA,LAC,10.571428571428571,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jordan Mason,MIN,DET,14.5,2,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Rhamondre Stevenson,NE,MIA,6.857142857142857,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Rachaad White,WAS,PHI,2.2,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Emanuel Wilson,SEA,CHI,9.428571428571429,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,RJ Harvey,DEN,KC,4.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Josh Jacobs,GB,CAR,5.0,1,WATCH; exact 2026 Q1 PBP through prior completed week
+8,TreVeyon Henderson,NE,MIA,14.833333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Brian Robinson Jr.,ATL,TB,7.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Kenny Gainwell,TB,ATL,2.4285714285714284,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jaylen Wright,MIA,NE,1.0,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Emmett Johnson,KC,DEN,1.75,4,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Austin Ekeler,WAS,PHI,5.0,3,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Kyle Monangai,CHI,SEA,5.0,4,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Dameon Pierce,PHI,WAS,10.666666666666666,3,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Justice Hill,BAL,BUF,5.166666666666667,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Jonah Coleman,DEN,KC,1.0,2,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Mike Washington Jr.,LV,NYJ,4.285714285714286,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Keaton Mitchell,LAC,LA,3.6666666666666665,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Samaje Perine,CIN,TEN,4.0,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Tyjae Spears,TEN,CIN,1.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Tyler Goodson,DAL,ARI,4.75,4,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Ty Johnson,BUF,BAL,1.5,2,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Sione Vaki,DET,MIN,1.2,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Trevor Etienne,CAR,GB,0.0,2,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Dylan Sampson,CLE,PIT,5.0,1,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Zach Charbonnet,SEA,CHI,,0,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Seth McGowan,IND,JAX,0.6666666666666666,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,David Montgomery,HOU,BYE,8.6,5,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Woody Marks,HOU,BYE,8.285714285714286,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Alvin Kamara,NO,BYE,4.0,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Kendre Miller,NO,BYE,2.6666666666666665,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Cam Skattebo,NYG,BYE,9.333333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Devin Singletary,NYG,BYE,3.75,4,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Christian McCaffrey,SF,BYE,15.57142857142857,7,WATCH; exact 2026 Q1 PBP through prior completed week
+8,Kaelon Black,SF,BYE,4.714285714285714,7,WATCH; exact 2026 Q1 PBP through prior completed week
