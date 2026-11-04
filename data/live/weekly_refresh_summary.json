@@ -1,169 +1,167 @@
 {
-  "target_week": 8,
-  "completed_week": 7,
+  "target_week": 9,
+  "completed_week": 8,
   "row_counts": {
     "current_week_model": 64,
     "rb_window_board": 192,
-    "rb_td_receiving_outlook": 56,
-    "rb_window_game_log": 1515,
-    "weekly_archive": 397,
-    "weekly_results": 397,
-    "usage_leaders": 728,
-    "matchup_pace": 214,
+    "rb_td_receiving_outlook": 60,
+    "rb_window_game_log": 1716,
+    "weekly_archive": 461,
+    "weekly_results": 461,
+    "usage_leaders": 825,
+    "matchup_pace": 242,
     "rb_roles": 96,
     "defense_monitor": 32
   },
   "top10": [
     {
       "rank": 1,
-      "player": "Kenneth Walker III",
-      "team": "KC",
-      "opponent": "DEN",
-      "exp_player_q1_yds": 29.900130969186584,
-      "v05_candidate_score": 85.41428431372549,
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "opponent": "CIN",
+      "exp_player_q1_yds": 26.636609125910297,
+      "v05_candidate_score": 86.8941697144198,
       "prime_label": "ELITE",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 2,
-      "player": "Bijan Robinson",
-      "team": "ATL",
-      "opponent": "TB",
-      "exp_player_q1_yds": 25.351884901038957,
-      "v05_candidate_score": 84.10841385991604,
-      "prime_label": "ELITE",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "opponent": "IND",
+      "exp_player_q1_yds": 23.03873228462748,
+      "v05_candidate_score": 76.61328588235294,
+      "prime_label": "PRIME",
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 3,
-      "player": "Bucky Irving",
-      "team": "TB",
-      "opponent": "ATL",
-      "exp_player_q1_yds": 23.908835884499325,
-      "v05_candidate_score": 80.51597484072698,
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent": "MIN",
+      "exp_player_q1_yds": 20.449491427021293,
+      "v05_candidate_score": 74.48876564225691,
       "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 4,
-      "player": "Jeremiyah Love",
-      "team": "ARI",
+      "player": "Jonathan Taylor",
+      "team": "IND",
       "opponent": "DAL",
-      "exp_player_q1_yds": 21.398401977658608,
-      "v05_candidate_score": 80.2887866827755,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "exp_player_q1_yds": 22.156888586546145,
+      "v05_candidate_score": 73.84317205882353,
+      "prime_label": "STRONG",
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 5,
-      "player": "Jaylen Warren",
-      "team": "PIT",
-      "opponent": "CLE",
-      "exp_player_q1_yds": 26.16869803203861,
-      "v05_candidate_score": 77.70783864439962,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "player": "Kenneth Walker III",
+      "team": "KC",
+      "opponent": "NYJ",
+      "exp_player_q1_yds": 22.842480384024167,
+      "v05_candidate_score": 73.47416529411764,
+      "prime_label": "STRONG",
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 6,
-      "player": "Derrick Henry",
-      "team": "BAL",
-      "opponent": "BUF",
-      "exp_player_q1_yds": 22.120872788476213,
-      "v05_candidate_score": 77.64989915966386,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "opponent": "NO",
+      "exp_player_q1_yds": 20.58650136959103,
+      "v05_candidate_score": 73.11936009237684,
+      "prime_label": "STRONG",
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 7,
-      "player": "James Cook III",
-      "team": "BUF",
-      "opponent": "BAL",
-      "exp_player_q1_yds": 18.914134680300897,
-      "v05_candidate_score": 72.3395756622649,
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "opponent": "JAX",
+      "exp_player_q1_yds": 18.722877773360302,
+      "v05_candidate_score": 72.45865882352942,
       "prime_label": "STRONG",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 8,
-      "player": "Tony Pollard",
-      "team": "TEN",
-      "opponent": "CIN",
-      "exp_player_q1_yds": 19.395850159500824,
-      "v05_candidate_score": 71.80549815126051,
+      "player": "Bucky Irving",
+      "team": "TB",
+      "opponent": "CHI",
+      "exp_player_q1_yds": 18.728136029709045,
+      "v05_candidate_score": 72.38243084921173,
       "prime_label": "STRONG",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 9,
-      "player": "Jahmyr Gibbs",
-      "team": "DET",
-      "opponent": "MIN",
-      "exp_player_q1_yds": 19.506811733591416,
-      "v05_candidate_score": 66.30290980392157,
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "opponent": "TB",
+      "exp_player_q1_yds": 20.66057521041121,
+      "v05_candidate_score": 69.21867272204321,
       "prime_label": "STRONG",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     },
     {
       "rank": 10,
-      "player": "D'Andre Swift",
-      "team": "CHI",
-      "opponent": "SEA",
-      "exp_player_q1_yds": 18.52635565859227,
-      "v05_candidate_score": 65.2102447653289,
-      "prime_label": "WATCH",
-      "injury_status": "No RB limitation listed in the early official Week 8 report; most Sunday reports are not yet filed"
+      "player": "Saquon Barkley",
+      "team": "PHI",
+      "opponent": "NYG",
+      "exp_player_q1_yds": 19.0031051779958,
+      "v05_candidate_score": 66.98106537815127,
+      "prime_label": "STRONG",
+      "injury_status": "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
     }
   ],
   "latest_accuracy": {
-    "Week": 7,
-    "Slate Date": "Week 7 slate",
+    "Week": 8,
+    "Slate Date": "Week 8 slate",
     "Model Version": "v0.5 production candidate",
-    "Elite Picks": 3,
-    "Prime Picks": 3,
-    "Top-10 Overlap": 0.4,
-    "Top-5 Avg Actual Q1 Yds": 21.0,
-    "20+ Hit Rate": 0.4,
+    "Elite Picks": 2,
+    "Prime Picks": 4,
+    "Top-10 Overlap": 0.5,
+    "Top-5 Avg Actual Q1 Yds": 39.6,
+    "20+ Hit Rate": 0.6,
     "25+ Hit Rate": 0.3,
-    "MAE": 8.998642703125,
-    "Spearman": 0.6376966999337204,
-    "Notes": "GRADED 2026-10-28 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 7 ranking"
+    "MAE": 7.813114937500001,
+    "Spearman": 0.701688276604437,
+    "Notes": "GRADED 2026-11-04 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 8 ranking"
   },
   "public_defense_worst": [
     {
       "team": "CLE",
-      "current_q1_rush_yds_allowed_per_game": 44.857142857142854,
+      "current_q1_rush_yds_allowed_per_game": 53.875,
       "current_public_rush_def_rank": 32
-    },
-    {
-      "team": "CAR",
-      "current_q1_rush_yds_allowed_per_game": 44.833333333333336,
-      "current_public_rush_def_rank": 31
     },
     {
       "team": "NO",
       "current_q1_rush_yds_allowed_per_game": 42.285714285714285,
+      "current_public_rush_def_rank": 31
+    },
+    {
+      "team": "CAR",
+      "current_q1_rush_yds_allowed_per_game": 39.57142857142857,
       "current_public_rush_def_rank": 30
     },
     {
-      "team": "DEN",
-      "current_q1_rush_yds_allowed_per_game": 36.57142857142857,
+      "team": "ATL",
+      "current_q1_rush_yds_allowed_per_game": 35.375,
       "current_public_rush_def_rank": 29
     },
     {
-      "team": "DAL",
-      "current_q1_rush_yds_allowed_per_game": 33.42857142857143,
+      "team": "DEN",
+      "current_q1_rush_yds_allowed_per_game": 33.375,
       "current_public_rush_def_rank": 28
     }
   ],
   "validation": {
-    "schedule_games": 14,
-    "schedule_team_rows": 28,
+    "schedule_games": 15,
+    "schedule_team_rows": 30,
     "bye_teams": [
-      "HOU",
-      "NO",
-      "NYG",
-      "SF"
+      "PIT",
+      "TEN"
     ],
     "reciprocal_alignment": true,
     "model_unique": true,
