@@ -21,11 +21,11 @@ PROCESSED.mkdir(parents=True, exist_ok=True)
 ARCHIVE.mkdir(parents=True, exist_ok=True)
 
 SEASON = 2026
-TARGET_WEEK = 9
-COMPLETED_WEEK = 8
-REFRESH_DATE = "2026-11-04"
-REFRESH_CT = "2026-11-04 03:00 CT"
-OUTGOING_PUBLISHED = "2026-10-28"
+TARGET_WEEK = 10
+COMPLETED_WEEK = 9
+REFRESH_DATE = "2026-11-11"
+REFRESH_CT = "2026-11-11 03:00 CT"
+OUTGOING_PUBLISHED = "2026-11-04"
 DEPTH_URL = "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv"
 PBP_URL = "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv.gz"
 ROSTER_URL = "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv"
@@ -41,21 +41,21 @@ WEIGHTS = {
     "confidence": 0.05,
 }
 
-DEFAULT_INJURY = "No RB limitation listed in the early official Week 9 report; most Sunday reports are not yet filed"
+DEFAULT_INJURY = "No RB limitation listed in the early official Week 10 report; most Sunday reports are not yet filed"
 INJURY = {
-    "bhayshul tuten": ("DNP Tuesday on the official Week 9 report; Thursday availability unresolved", 0.55),
-    "chris rodriguez": ("Limited Tuesday on the official Week 9 report; Thursday availability unresolved", 0.85),
+    "cam skattebo": ("Full participation Tuesday on the official Week 10 report", 1.0),
+    "josh jacobs": ("Finger surgery scheduled; return timeline TBD in NFL.com Week 10 news", 0.45),
 }
 
-# Sharp's public Week 8 matchup page, published 2026-10-27, ranks the opponent's
-# rushing defense. This current public signal is intentionally kept separate from
+# Sharp's public Week 10 matchup page, published 2026-11-10, ranks the opponent's
+# rushing defense. This public signal is intentionally kept separate from
 # the inaccessible proprietary Rush Efficiency DEF snapshot.
 LAST_VERIFIED_PUBLIC_DWEF_BY_DEF = {
-    "GB": 27, "CAR": 24, "DAL": 26, "ARI": 12, "TB": 7, "ATL": 16,
-    "BUF": 28, "BAL": 10, "PIT": 5, "CLE": 11, "JAX": 3, "IND": 21,
-    "NYJ": 17, "LV": 31, "DET": 19, "MIN": 4, "CIN": 13, "TEN": 25,
-    "LA": 8, "LAC": 6, "DEN": 9, "KC": 2, "MIA": 22, "NE": 15,
-    "WAS": 23, "PHI": 30, "SEA": 1, "CHI": 18,
+    "NYG": 18, "WAS": 25, "DET": 14, "NE": 12, "NYJ": 28, "BUF": 26,
+    "NO": 27, "CAR": 21, "CLE": 19, "HOU": 22, "TEN": 23, "JAX": 3,
+    "ATL": 16, "KC": 6, "IND": 30, "MIA": 29, "GB": 24, "MIN": 8,
+    "ARI": 10, "LA": 1, "LV": 32, "SEA": 5, "DAL": 31, "SF": 15,
+    "CIN": 20, "PIT": 4, "BAL": 7, "LAC": 9,
 }
 SHARP_PUBLIC_URL = "https://www.sharpfootballanalysis.com/stats-nfl/nfl-matchups/"
 
@@ -103,7 +103,7 @@ def clean_pbp(pbp: pd.DataFrame) -> pd.DataFrame:
 def build_window_logs(reg: pd.DataFrame, roster: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     games = reg[["game_id", "week", "home_team", "away_team"]].drop_duplicates("game_id")
     counts = games.groupby("week")["game_id"].nunique().to_dict()
-    expected = {1: 16, 2: 16, 3: 16, 4: 16, 5: 15, 6: 14, 7: 14, 8: 14}
+    expected = {1: 16, 2: 16, 3: 16, 4: 16, 5: 15, 6: 14, 7: 14, 8: 14, 9: 15}
     if counts != expected:
         raise AssertionError(f"Completed-game coverage mismatch for Weeks 1-{COMPLETED_WEEK}: {counts}")
     home = games.assign(team=games.home_team, opponent=games.away_team, site="H")
@@ -362,7 +362,7 @@ def build_model(depth: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
                     "proj_team_q1_yds": 0.0, "exp_player_q1_yds": 0.0,
                     "floor": 0.0, "ceiling": 0.0, "prob20_proxy": 0.0, "prob25_proxy": 0.0,
                     "v05_candidate_score": 0.0, "prime_label": "PASS", "public_def_rank": np.nan,
-                    "def_input_used": "BYE — no matchup", "def_source_status": "Sharp Week 4 snapshot preserved — STALE for Week 9",
+                    "def_input_used": "BYE — no matchup", "def_source_status": "Sharp proprietary Week 4 snapshot preserved — STALE for Week 10",
                     "injury_status": "BYE",
                     "avg_rush_att_per_game": float(r.avg_rush_att_per_game) if pd.notna(r.avg_rush_att_per_game) else 0.0,
                     "opp_avg_ypc_allowed": np.nan, "volume_x_ypc_proj_rush_yds": 0.0,
@@ -411,7 +411,7 @@ def build_model(depth: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
                 "floor": max(0, exp_yards - 0.75 * hist_std), "ceiling": exp_yards + 0.75 * hist_std,
                 "prob20_proxy": normal_over(exp_yards, hist_std, 20), "prob25_proxy": normal_over(exp_yards, hist_std, 25),
                 "v05_candidate_score": score, "prime_label": tier, "public_def_rank": int(r.public_def_rank),
-                "def_input_used": "2026 public Q1 rush allowed rank", "def_source_status": "Sharp Week 4 snapshot preserved separately — STALE for Week 9",
+                "def_input_used": "2026 public Q1 rush allowed rank", "def_source_status": "Sharp proprietary Week 4 snapshot preserved separately — STALE; Sharp public Week 10 DWEF current",
                 "injury_status": r.injury_status,
                 "avg_rush_att_per_game": float(r.avg_rush_att_per_game) if pd.notna(r.avg_rush_att_per_game) else 0.0,
                 "opp_avg_ypc_allowed": float(r.opp_avg_ypc_allowed),
@@ -438,8 +438,8 @@ def build_model(depth: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
     defense["current_q1_rush_yds_allowed_per_game"] = defense.q1_allowed
     defense["current_public_rush_def_rank"] = defense.public_def_rank
     defense["model_def_input"] = defense.public_def_rank
-    defense["model_source_used"] = "nflverse 2026 Weeks 1–8 Q1 rushing allowed"
-    defense["integrity_note"] = "Sharp proprietary Week 4 value preserved but not guessed; completed Weeks 1-8 public rank used for Week 9"
+    defense["model_source_used"] = "nflverse 2026 Weeks 1–9 Q1 rushing allowed"
+    defense["integrity_note"] = "Sharp proprietary Week 4 value preserved but not guessed; completed Weeks 1-9 public rank used for Week 10"
     defense = defense[["team", "sharp_rush_def_rank", "sharp_last_verified", "sharp_status", "current_q1_rush_yds_allowed_per_game", "current_public_rush_def_rank", "model_def_input", "model_source_used", "integrity_note"]].sort_values("team")
     return model, dash, defense
 
@@ -482,7 +482,7 @@ def build_board(model: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
                 "neutral_rush_yds": base_player, "leading_rush_yds": base_player * 1.10, "script_adjusted_rush_yds": base_player,
                 "floor": max(0, base_player - 0.75 * sd), "ceiling": base_player + 0.75 * sd,
                 "model_benchmark_yards": benchmark, "model_benchmark_probability": prob,
-                "probability_source": "2025 baseline + completed 2026 Weeks 1–8 window distribution",
+                "probability_source": "2025 baseline + completed 2026 Weeks 1–9 window distribution",
                 "sportsbook_market": "", "consensus_line": np.nan, "sportsbook_over_probability": np.nan,
                 "model_over_probability": np.nan, "probability_edge": np.nan, "sportsbook_count": 0,
                 "odds_status": "MODEL ONLY — NO VERIFIED LINE", "opportunity_score": score, "tier": tier,
@@ -499,8 +499,8 @@ def build_board(model: pd.DataFrame, team_log: pd.DataFrame, rb_log: pd.DataFram
 def build_td_receiving_outlook(model: pd.DataFrame, usage: pd.DataFrame, pace: pd.DataFrame, reg: pd.DataFrame) -> pd.DataFrame:
     """Build full-game, model-derived TD and receiving probabilities for active RBs."""
     active = model.loc[~model.opponent.eq("BYE")].copy()
-    if len(active) != 60:
-        raise AssertionError(f"Expected 60 active RB rows for Week 9, got {len(active)}")
+    if len(active) != 56:
+        raise AssertionError(f"Expected 56 active RB rows for Week 10, got {len(active)}")
 
     u = usage.copy()
     u["player_key"] = u["Player"].map(norm_name)
@@ -600,7 +600,7 @@ def build_td_receiving_outlook(model: pd.DataFrame, usage: pd.DataFrame, pace: p
             "Rank": 0, "Week": TARGET_WEEK, "Player": r.player, "Team": r.team, "Opp": r.opponent,
             "Site": r.site, "Role": r.depth_role, "Backfield": r.backfield_type,
             "DWEF Rush Rank": verified_dwef, "Opp YPC Allowed": ypc,
-            "Opponent Defense Insight": insight + ("; Week 8 Sharp public DWEF carried forward — STALE" if pd.notna(verified_dwef) else "; Sharp public DWEF unavailable — current public Q1 rank substituted"),
+            "Opponent Defense Insight": insight + ("; Week 10 Sharp public DWEF current" if pd.notna(verified_dwef) else "; Sharp public DWEF unavailable — current public Q1 rank substituted"),
             "Avg Rush Att/G": float(r.avg_rush_att_per_game), "Carry Share": float(r.final_carry_share),
             "Avg Targets/G": float(r.avg_targets), "Avg Target Share": float(r.avg_target_share),
             "Pace Factor": pace_factor, "P(1+ TD)": p1_td, "P(2+ TD)": p2_td,
@@ -612,8 +612,8 @@ def build_td_receiving_outlook(model: pd.DataFrame, usage: pd.DataFrame, pace: p
     outlook["Rank"] = range(1, len(outlook) + 1)
     if outlook.duplicated(["Week", "Team", "Player"]).any():
         raise AssertionError("Duplicate TD/receiving outlook player rows detected")
-    if outlook["DWEF Rush Rank"].notna().sum() != 52:
-        raise AssertionError("Expected 52 active RB rows with a carried-forward verified public DWEF value")
+    if outlook["DWEF Rush Rank"].notna().sum() != 56:
+        raise AssertionError("Expected 56 active RB rows with a current verified public Week 10 DWEF value")
     return outlook
 
 
@@ -689,8 +689,8 @@ def main() -> int:
     outgoing = extract_table(wb["Current Week Model"], 4, 26)
     archive = extract_table(wb["Weekly Archive"], 6, 23)
     outgoing["week"] = pd.to_numeric(outgoing.week, errors="coerce")
-    if len(outgoing) != 64 or set(outgoing.week.dropna().astype(int)) != {8}:
-        raise AssertionError(f"Expected frozen 64-row published Week 8 Sheet snapshot, got {len(outgoing)} rows / {set(outgoing.week)}")
+    if len(outgoing) != 64 or set(outgoing.week.dropna().astype(int)) != {9}:
+        raise AssertionError(f"Expected frozen 64-row published Week 9 Sheet snapshot, got {len(outgoing)} rows / {set(outgoing.week)}")
 
     pbp = pd.read_csv(PBP_URL, compression="gzip", low_memory=False)
     roster = pd.read_csv(ROSTER_URL, low_memory=False)
@@ -698,8 +698,8 @@ def main() -> int:
     snaps = pd.read_csv(SNAP_URL, low_memory=False)
     games = pd.read_csv(SCHEDULE_URL, low_memory=False)
     schedule = games.loc[(games.season.eq(SEASON)) & (games.week.eq(TARGET_WEEK)) & games.game_type.eq("REG")].copy()
-    if len(schedule) != 15:
-        raise AssertionError(f"Expected 15 Week {TARGET_WEEK} games plus two byes, got {len(schedule)}")
+    if len(schedule) != 14:
+        raise AssertionError(f"Expected 14 Week {TARGET_WEEK} games plus four byes, got {len(schedule)}")
     reg = clean_pbp(pbp)
     team_log, rb_log, game_log = build_window_logs(reg, roster)
     pace, usage = build_pace_and_usage(reg, snaps, roster)
@@ -717,9 +717,9 @@ def main() -> int:
     roles = roles.loc[roles.team_rb_order.le(3), ["team", "player_name", "gsis_id", "team_rb_order", "pos_slot", "pos_rank", "dt"]]
     roles["injury_status"] = roles.player_name.map(lambda x: INJURY.get(norm_name(x), (DEFAULT_INJURY, 1))[0])
     roles["depth_source"] = DEPTH_URL
-    roles["data_state"] = "CURRENT DEPTH / EARLY WEEK 9 INJURY REPORT"
+    roles["data_state"] = "CURRENT DEPTH / EARLY WEEK 10 INJURY REPORT"
 
-    archive_dir = ARCHIVE / "2026_week_08"
+    archive_dir = ARCHIVE / "2026_week_09"
     archive_dir.mkdir(parents=True, exist_ok=True)
     outgoing.to_csv(archive_dir / "current_week_model.csv", index=False)
     model.to_csv(LIVE / "current_week_model.csv", index=False, float_format="%.6f")
@@ -734,23 +734,23 @@ def main() -> int:
     usage.to_csv(LIVE / "rb_usage_leaders_2026.csv", index=False, float_format="%.6f")
     pace.to_csv(LIVE / "matchup_pace_2026.csv", index=False, float_format="%.6f")
     roles.to_csv(LIVE / "rb_roles_2026.csv", index=False)
-    schedule[["game_id", "gameday", "gametime", "away_team", "home_team"]].to_csv(LIVE / "schedule_week_9.csv", index=False)
+    schedule[["game_id", "gameday", "gametime", "away_team", "home_team"]].to_csv(LIVE / "schedule_week_10.csv", index=False)
     pd.DataFrame([
         {"offense": t, "opponent": model.loc[(model.team.eq(t)) & ~model.opponent.eq("BYE"), "opponent"].iloc[0],
          "public_dwef_rush_rank": LAST_VERIFIED_PUBLIC_DWEF_BY_DEF.get(model.loc[(model.team.eq(t)) & ~model.opponent.eq("BYE"), "opponent"].iloc[0], np.nan),
-         "verified_date": "2026-10-27", "source": SHARP_PUBLIC_URL,
-         "source_label": "Sharp public Week 8 matchup rushing-defense rank carried forward — STALE; blank when unavailable"}
+         "verified_date": "2026-11-10", "source": SHARP_PUBLIC_URL,
+         "source_label": "Sharp public Week 10 matchup rushing-defense rank — CURRENT; blank when unavailable"}
         for t in sorted(model.loc[~model.opponent.eq("BYE"), "team"].unique())
-    ]).to_csv(LIVE / "sharp_public_week9_matchup_rush_def.csv", index=False)
+    ]).to_csv(LIVE / "sharp_public_week10_matchup_rush_def.csv", index=False)
 
     status = pd.DataFrame([
         ("season", SEASON), ("current_target_week", TARGET_WEEK), ("latest_completed_week", COMPLETED_WEEK),
-        ("last_model_refresh", REFRESH_DATE), ("next_scheduled_refresh", "2026-11-11 03:00 CT"),
+        ("last_model_refresh", REFRESH_DATE), ("next_scheduled_refresh", "2026-11-18 03:00 CT"),
         ("timezone", "America/Chicago"), ("scoring_version", "v0.5 production candidate + 2026 live calibration"),
         ("source_repo", "davidcantugtr/nfl-Rushing-Stats"),
         ("sharp_status", "STALE — last verified 32/32 Week 4 snapshot on 2026-10-03; not guessed"),
-        ("public_defense_status", "2026 Weeks 1-8 complete; public Q1 rush-allowed rank used for Week 9; Sharp public DWEF page rechecked 2026-11-04 but still rendered Week 8 rows, so last verified values are carried forward and marked stale"),
-        ("validation_status", "PASS — 15 games + 2 byes / 30 reciprocal active teams / 64 RBs / 192 windows / 60 active TD-receiving rows / no duplicates / role-share sanity"),
+        ("public_defense_status", "2026 Weeks 1-9 complete; public Q1 rush-allowed rank used for Week 10; Sharp public Week 10 DWEF verified 2026-11-10 and kept separate from stale proprietary Rush Efficiency DEF"),
+        ("validation_status", "PASS — 14 games + 4 byes / 28 reciprocal active teams / 64 RBs / 192 windows / 56 active TD-receiving rows / no duplicates / role-share sanity"),
     ], columns=["key", "value"])
     status.to_csv(LIVE / "model_status.csv", index=False)
 

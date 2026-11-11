@@ -1,12 +1,12 @@
 key,value
 season,2026
-current_target_week,9
-latest_completed_week,8
-last_model_refresh,2026-11-04
-next_scheduled_refresh,2026-11-11 03:00 CT
+current_target_week,10
+latest_completed_week,9
+last_model_refresh,2026-11-11
+next_scheduled_refresh,2026-11-18 03:00 CT
 timezone,America/Chicago
 scoring_version,v0.5 production candidate + 2026 live calibration
 source_repo,davidcantugtr/nfl-Rushing-Stats
 sharp_status,STALE — last verified 32/32 Week 4 snapshot on 2026-10-03; not guessed
-public_defense_status,"2026 Weeks 1-8 complete; public Q1 rush-allowed rank used for Week 9; Sharp public DWEF page rechecked 2026-11-04 but still rendered Week 8 rows, so last verified values are carried forward and marked stale"
-validation_status,PASS — 15 games + 2 byes / 30 reciprocal active teams / 64 RBs / 192 windows / 60 active TD-receiving rows / no duplicates / role-share sanity
+public_defense_status,2026 Weeks 1-9 complete; public Q1 rush-allowed rank used for Week 10; Sharp public Week 10 DWEF verified 2026-11-10 and kept separate from stale proprietary Rush Efficiency DEF
+validation_status,PASS — 14 games + 4 byes / 28 reciprocal active teams / 64 RBs / 192 windows / 56 active TD-receiving rows / no duplicates / role-share sanity
