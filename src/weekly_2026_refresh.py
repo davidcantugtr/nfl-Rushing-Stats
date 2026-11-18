@@ -45,6 +45,7 @@ DEFAULT_INJURY = "No RB limitation listed in the early official Week 11 report; 
 INJURY = {
     "woody marks": ("Did not participate Tuesday on the official Week 11 report", 0.70),
     "david montgomery": ("Full participation Tuesday on the official Week 11 report", 1.0),
+    "kenneth walker": ("Week 10 groin absence; short absence expected, but Week 11 practice status is not yet official", 0.85),
 }
 
 # Sharp's public Week 11 matchup page, published 2026-11-17, ranks the opponent's
