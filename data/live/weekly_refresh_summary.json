@@ -1,133 +1,134 @@
 {
-  "target_week": 11,
-  "completed_week": 10,
+  "target_week": 12,
+  "completed_week": 11,
   "row_counts": {
     "current_week_model": 64,
     "rb_window_board": 192,
-    "rb_td_receiving_outlook": 52,
-    "rb_window_game_log": 2127,
-    "weekly_archive": 589,
-    "weekly_results": 589,
-    "usage_leaders": 1017,
-    "matchup_pace": 300,
+    "rb_td_receiving_outlook": 64,
+    "rb_window_game_log": 2307,
+    "weekly_archive": 653,
+    "weekly_results": 653,
+    "usage_leaders": 1109,
+    "matchup_pace": 326,
     "rb_roles": 96,
-    "defense_monitor": 32
+    "defense_monitor": 32,
+    "defensive_injury_status": 32
   },
   "top10": [
     {
       "rank": 1,
-      "player": "Derrick Henry",
-      "team": "BAL",
+      "player": "Bucky Irving",
+      "team": "TB",
       "opponent": "CAR",
-      "exp_player_q1_yds": 26.903848216899153,
-      "v05_candidate_score": 86.52248039215687,
+      "exp_player_q1_yds": 25.376966431037683,
+      "v05_candidate_score": 83.82252916658435,
       "prime_label": "ELITE",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 2,
-      "player": "Tony Pollard",
-      "team": "TEN",
-      "opponent": "DAL",
-      "exp_player_q1_yds": 23.602681906606698,
-      "v05_candidate_score": 80.345914248366,
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "opponent": "MIN",
+      "exp_player_q1_yds": 21.37646587686414,
+      "v05_candidate_score": 78.6142406274877,
       "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 3,
-      "player": "Bucky Irving",
-      "team": "TB",
-      "opponent": "DET",
-      "exp_player_q1_yds": 22.519651782211977,
-      "v05_candidate_score": 78.27564404337524,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "opponent": "HOU",
+      "exp_player_q1_yds": 19.957493065117422,
+      "v05_candidate_score": 73.97865867379679,
+      "prime_label": "STRONG",
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 4,
-      "player": "James Cook III",
-      "team": "BUF",
-      "opponent": "MIA",
-      "exp_player_q1_yds": 21.754188154587144,
-      "v05_candidate_score": 76.67671232932517,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "opponent": "PHI",
+      "exp_player_q1_yds": 19.435410012338515,
+      "v05_candidate_score": 72.21890239827265,
+      "prime_label": "STRONG",
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 5,
-      "player": "D'Andre Swift",
-      "team": "CHI",
-      "opponent": "NO",
-      "exp_player_q1_yds": 24.780285139873307,
-      "v05_candidate_score": 75.88800822598873,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "opponent": "NYG",
+      "exp_player_q1_yds": 19.50213711574745,
+      "v05_candidate_score": 71.68537106392728,
+      "prime_label": "STRONG",
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 6,
-      "player": "Jahmyr Gibbs",
-      "team": "DET",
-      "opponent": "TB",
-      "exp_player_q1_yds": 22.130398558594077,
-      "v05_candidate_score": 74.29092862745098,
-      "prime_label": "PRIME",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "opponent": "DEN",
+      "exp_player_q1_yds": 20.66665316175437,
+      "v05_candidate_score": 71.344442594894,
+      "prime_label": "STRONG",
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 7,
-      "player": "Javonte Williams",
-      "team": "DAL",
-      "opponent": "TEN",
-      "exp_player_q1_yds": 18.752948470138328,
-      "v05_candidate_score": 71.72000411764705,
+      "player": "James Cook III",
+      "team": "BUF",
+      "opponent": "KC",
+      "exp_player_q1_yds": 19.44916946882018,
+      "v05_candidate_score": 71.30935697109277,
       "prime_label": "STRONG",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 8,
-      "player": "Jaylen Warren",
-      "team": "PIT",
-      "opponent": "PHI",
-      "exp_player_q1_yds": 19.911642139633173,
-      "v05_candidate_score": 70.19138222317176,
+      "player": "Saquon Barkley",
+      "team": "PHI",
+      "opponent": "DAL",
+      "exp_player_q1_yds": 18.3756849440443,
+      "v05_candidate_score": 68.09612451887357,
       "prime_label": "STRONG",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "injury_status": "Full participation on official Week 12 report"
     },
     {
       "rank": 9,
-      "player": "Jonathan Taylor",
-      "team": "IND",
-      "opponent": "HOU",
-      "exp_player_q1_yds": 16.360664899822535,
-      "v05_candidate_score": 65.72037559418108,
-      "prime_label": "WATCH",
-      "injury_status": "No RB limitation listed in the early official Week 11 report; most Sunday reports are not yet filed"
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "opponent": "LV",
+      "exp_player_q1_yds": 19.08626526484723,
+      "v05_candidate_score": 67.97926058663066,
+      "prime_label": "STRONG",
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     },
     {
       "rank": 10,
-      "player": "Kenneth Walker III",
-      "team": "KC",
-      "opponent": "ARI",
-      "exp_player_q1_yds": 14.207268589885043,
-      "v05_candidate_score": 60.80384064509288,
-      "prime_label": "WATCH",
-      "injury_status": "Week 10 groin absence; short absence expected, but Week 11 practice status is not yet official"
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "opponent": "JAX",
+      "exp_player_q1_yds": 15.538090254555142,
+      "v05_candidate_score": 67.00607176470588,
+      "prime_label": "STRONG",
+      "injury_status": "Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT"
     }
   ],
   "latest_accuracy": {
-    "Week": 10,
-    "Slate Date": "Week 10 slate",
+    "Week": 11,
+    "Slate Date": "Week 11 slate",
     "Model Version": "v0.5 production candidate",
-    "Elite Picks": 2,
-    "Prime Picks": 2,
-    "Top-10 Overlap": 0.5,
-    "Top-5 Avg Actual Q1 Yds": 6.6,
-    "20+ Hit Rate": 0.5,
-    "25+ Hit Rate": 0.3,
-    "MAE": 6.646836,
-    "Spearman": 0.5547559991607369,
-    "Notes": "GRADED 2026-11-18 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 10 ranking"
+    "Elite Picks": 1,
+    "Prime Picks": 5,
+    "Top-10 Overlap": 0.3,
+    "Top-5 Avg Actual Q1 Yds": 17.2,
+    "20+ Hit Rate": 0.2,
+    "25+ Hit Rate": 0.0,
+    "MAE": 6.711608468750001,
+    "Spearman": 0.6029811427728219,
+    "Notes": "GRADED 2026-11-25 from nflverse Q1 play-by-play; top-10 metrics use frozen published Week 11 ranking"
   },
   "public_defense_worst": [
     {
@@ -137,39 +138,36 @@
     },
     {
       "team": "LV",
-      "current_q1_rush_yds_allowed_per_game": 39.8,
+      "current_q1_rush_yds_allowed_per_game": 39.36363636363637,
       "current_public_rush_def_rank": 31
     },
     {
       "team": "NO",
-      "current_q1_rush_yds_allowed_per_game": 37.55555555555556,
+      "current_q1_rush_yds_allowed_per_game": 37.4,
       "current_public_rush_def_rank": 30
-    },
-    {
-      "team": "CAR",
-      "current_q1_rush_yds_allowed_per_game": 35.22222222222222,
-      "current_public_rush_def_rank": 29
     },
     {
       "team": "ATL",
       "current_q1_rush_yds_allowed_per_game": 34.9,
+      "current_public_rush_def_rank": 29
+    },
+    {
+      "team": "CAR",
+      "current_q1_rush_yds_allowed_per_game": 34.0,
       "current_public_rush_def_rank": 28
     }
   ],
   "validation": {
-    "schedule_games": 13,
-    "schedule_team_rows": 26,
-    "bye_teams": [
-      "ATL",
-      "CLE",
-      "GB",
-      "LA",
-      "NE",
-      "SEA"
-    ],
+    "schedule_games": 16,
+    "schedule_team_rows": 32,
+    "bye_teams": [],
     "reciprocal_alignment": true,
     "model_unique": true,
     "board_unique": true,
+    "game_log_unique": true,
+    "role_share_sanity": true,
+    "completed_game_reconciliation": true,
+    "source_timestamp": "2026-11-25 03:00 CT",
     "sharp_stale": true,
     "injury_reports_incomplete_for_sunday": true
   }

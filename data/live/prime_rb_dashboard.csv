@@ -1,65 +1,65 @@
-week,player,team,opponent,script_adjusted_rush_yds,history_games,model_note
-11,Derrick Henry,BAL,CAR,23.5,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Tony Pollard,TEN,DAL,26.333333333333336,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Bucky Irving,TB,DET,28.33333333333333,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,James Cook III,BUF,MIA,21.666666666666668,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,D'Andre Swift,CHI,NO,21.22222222222222,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jahmyr Gibbs,DET,TB,24.444444444444443,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Javonte Williams,DAL,TEN,21.5,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jaylen Warren,PIT,PHI,25.33333333333333,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jonathan Taylor,IND,HOU,18.9,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Kenneth Walker III,KC,ARI,24.5,8,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Chuba Hubbard,CAR,BAL,16.0,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Bhayshul Tuten,JAX,NYG,16.88888888888889,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Christian McCaffrey,SF,MIN,17.77777777777778,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,J.K. Dobbins,DEN,LV,10.333333333333334,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Saquon Barkley,PHI,PIT,14.714285714285714,7,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Ashton Jeanty,LV,DEN,9.9,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Omarion Hampton,LAC,NYJ,12.777777777777779,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Aaron Jones Sr.,MIN,SF,15.666666666666664,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Tyler Allgeier,ARI,KC,9.5,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Ollie Gordon II,MIA,BUF,16.875,8,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Chase Brown,CIN,WAS,11.222222222222221,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Rachaad White,WAS,CIN,5.375,8,WATCH; exact 2026 Q1 PBP through prior completed week
-11,David Montgomery,HOU,IND,8.6,5,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Braelon Allen,NYJ,LAC,15.7,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Breece Hall,NYJ,LAC,14.4,5,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Chris Rodriguez Jr.,JAX,NYG,9.555555555555555,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Rico Dowdle,PIT,PHI,11.833333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Kyle Monangai,CHI,NO,5.0,4,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Woody Marks,HOU,IND,9.444444444444445,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Cam Skattebo,NYG,JAX,11.285714285714286,7,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Austin Ekeler,WAS,CIN,5.666666666666667,6,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Bam Knight,ARI,KC,11.333333333333334,6,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Mike Washington Jr.,LV,DEN,6.8,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Justice Hill,BAL,CAR,3.5555555555555554,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jonah Coleman,DEN,LV,3.75,4,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jordan Mason,MIN,SF,10.2,5,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Kaelon Black,SF,MIN,5.444444444444445,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Travis Etienne Jr.,NO,CHI,6.0,4,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Tyler Goodson,DAL,TEN,7.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Kenny Gainwell,TB,DET,2.6666666666666665,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Keaton Mitchell,LAC,NYJ,3.0,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Sione Vaki,DET,TB,4.5,8,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Tyjae Spears,TEN,DAL,0.8571428571428571,7,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Alvin Kamara,NO,CHI,3.0,8,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Ty Johnson,BUF,MIA,1.25,4,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Emmett Johnson,KC,ARI,6.285714285714285,7,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Samaje Perine,CIN,WAS,3.5555555555555554,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Devin Singletary,NYG,JAX,4.5,6,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Seth McGowan,IND,HOU,2.5555555555555554,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jaylen Wright,MIA,BUF,0.7142857142857143,7,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Trevor Etienne,CAR,BAL,-0.4,5,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jaydon Blue,PHI,PIT,,0,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Bijan Robinson,ATL,BYE,30.700000000000003,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Khalil Herbert,ATL,BYE,0.0,3,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Dylan Sampson,CLE,BYE,1.5,4,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Quinshon Judkins,CLE,BYE,16.333333333333332,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Josh Jacobs,GB,BYE,6.0,3,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Kaleb Johnson,GB,BYE,3.5714285714285716,7,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Blake Corum,LA,BYE,8.0,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Kyren Williams,LA,BYE,13.7,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Corey Kiner,NE,BYE,4.222222222222222,9,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Rhamondre Stevenson,NE,BYE,6.1,10,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Jadarian Price,SEA,BYE,11.666666666666668,6,WATCH; exact 2026 Q1 PBP through prior completed week
-11,Zach Charbonnet,SEA,BYE,21.333333333333332,3,WATCH; exact 2026 Q1 PBP through prior completed week
+week,rank,player,player_id,team,opponent,site,depth_role,backfield_type,sharp_def_rank,public_def_rank,def_input_used,final_carry_share,exp_q1_carries,proj_team_q1_yds,exp_player_q1_yds,floor,ceiling,prob20_proxy,prob25_proxy,v04_score,v05_candidate_score,v05_delta,prime_label,injury_status
+12,1,Bucky Irving,00-0039361,TB,CAR,H,RB1,Strong RB1,3,28,2026 public Q1 rush allowed rank,0.671021,5.297510,37.757506,25.376966,13.943887,36.810046,0.637852,0.509864,83.822529,83.822529,0.000000,ELITE,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,2,Bijan Robinson,00-0038542,ATL,MIN,A,RB1,Bellcow / QB diluted,14,9,2026 public Q1 rush allowed rank,0.685659,4.219020,30.818453,21.376466,4.455408,38.297524,0.524324,0.436201,78.614241,78.614241,0.000000,PRIME,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,3,Derrick Henry,00-0032764,BAL,HOU,A,RB1,Bellcow,20,8,2026 public Q1 rush allowed rank,0.722441,5.076634,28.598121,19.957493,7.474307,32.440679,0.498981,0.380961,73.978659,73.978659,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,4,Javonte Williams,00-0036997,DAL,PHI,H,RB1,Bellcow,22,14,2026 public Q1 rush allowed rank,0.691494,4.856245,29.299144,19.435410,9.330887,29.539933,0.483287,0.339793,72.218902,72.218902,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,5,Jonathan Taylor,00-0036223,IND,NYG,H,RB1,Bellcow,18,22,2026 public Q1 rush allowed rank,0.693650,4.196301,27.551104,19.502137,9.721955,29.282319,0.484772,0.336656,71.685371,71.685371,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,6,Jaylen Warren,00-0037228,PIT,DEN,H,RB1,Strong RB1,10,21,2026 public Q1 rush allowed rank,0.629027,3.776380,31.472766,20.666653,4.776146,36.557160,0.512551,0.418972,71.344443,71.344443,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,7,James Cook III,00-0037248,BUF,KC,H,RB1,Strong RB1 / QB diluted,23,11,2026 public Q1 rush allowed rank,0.628147,4.817887,30.380555,19.449169,9.332518,29.565821,0.483713,0.340349,71.309357,71.309357,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,8,Saquon Barkley,00-0034844,PHI,DAL,A,RB1,RB1A/RB1B / QB diluted,28,24,2026 public Q1 rush allowed rank,0.560967,3.672683,31.216150,18.375685,4.843228,31.908142,0.464134,0.356759,68.096125,68.096125,0.000000,STRONG,Full participation on official Week 12 report
+12,9,Quinshon Judkins,00-0040784,CLE,LV,H,RB1,Strong RB1 / QB diluted,24,31,2026 public Q1 rush allowed rank,0.613859,4.003213,30.349530,19.086265,10.052735,28.119796,0.469764,0.311720,67.979261,67.979261,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,10,Tony Pollard,00-0035261,TEN,JAX,A,RB1,Bellcow / QB diluted,21,1,2026 public Q1 rush allowed rank,0.710318,4.005987,21.682424,15.538090,0.000000,33.760523,0.427147,0.348478,67.006072,67.006072,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,11,D'Andre Swift,00-0036275,CHI,DET,A,RB1,Strong RB1 / QB diluted,4,18,2026 public Q1 rush allowed rank,0.580977,4.559306,31.663396,19.810358,7.651848,31.968867,0.495333,0.374437,66.620822,66.620822,0.000000,STRONG,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,12,Jahmyr Gibbs,00-0039139,DET,CHI,H,RB1,Bellcow,9,2,2026 public Q1 rush allowed rank,0.783149,4.022850,20.647380,16.315062,6.545054,26.085070,0.388636,0.252481,63.040487,63.040487,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,13,Ashton Jeanty,00-0040122,LV,CLE,A,RB1,RB1A/RB1B,11,32,2026 public Q1 rush allowed rank,0.567660,3.714471,34.404334,17.377123,11.736724,23.017523,0.363634,0.155385,62.221162,62.221162,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,14,Kenneth Walker III,00-0038134,KC,BUF,A,RB1,Strong RB1,16,4,2026 public Q1 rush allowed rank,0.589642,3.567159,24.682765,14.272043,4.681990,23.862096,0.327091,0.200737,61.438842,61.438842,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,15,Chase Brown,00-0038597,CIN,NO,H,RB1,Strong RB1,30,30,2026 public Q1 rush allowed rank,0.617324,3.673262,28.506885,18.058223,10.983438,25.133007,0.418455,0.230896,61.115895,61.115895,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,16,Aaron Jones Sr.,00-0033293,MIN,ATL,H,RB2,RB1A/RB1B / QB diluted,2,29,2026 public Q1 rush allowed rank,0.494775,3.537057,31.890618,16.179595,9.678686,22.680505,0.329695,0.154435,61.101502,61.101502,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,17,Chuba Hubbard,00-0036555,CAR,TB,A,RB1,Bellcow,12,16,2026 public Q1 rush allowed rank,0.809212,4.600133,22.366645,18.553447,11.526667,25.580228,0.438648,0.245704,60.029987,60.029987,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,18,Bhayshul Tuten,00-0040719,JAX,TEN,H,RB1,RB1A/RB1B,6,23,2026 public Q1 rush allowed rank,0.567832,4.027934,30.535847,15.661906,11.149922,20.173890,0.235425,0.060305,58.354670,58.354670,0.000000,WATCH,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,19,Christian McCaffrey,00-0033280,SF,SEA,H,RB1,RB1A/RB1B / QB diluted,25,15,2026 public Q1 rush allowed rank,0.514254,3.606279,28.112087,16.062296,6.735599,25.388993,0.375755,0.236157,57.395367,57.395367,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,20,Omarion Hampton,00-0040666,LAC,NE,H,RB1,RB1A/RB1B / QB diluted,13,26,2026 public Q1 rush allowed rank,0.524812,3.675224,29.521326,16.052440,10.665933,21.438946,0.291281,0.106413,56.899719,56.899719,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,21,Ollie Gordon II,00-0040198,MIA,NYJ,H,RB1,RB1A/RB1B / QB diluted,17,20,2026 public Q1 rush allowed rank,0.561583,3.946396,30.547267,18.052605,12.001730,24.103480,0.404631,0.194585,56.059392,56.059392,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,22,Kyren Williams,00-0037840,LA,GB,H,RB1,RB1A/RB1B,31,10,2026 public Q1 rush allowed rank,0.567865,3.276918,24.170654,13.811143,3.477899,24.144387,0.326645,0.208367,54.166250,54.166250,0.000000,PASS,Full participation on final official Week 12 report
+12,23,Breece Hall,00-0038120,NYJ,MIA,A,RB1,RB1A/RB1B,27,17,2026 public Q1 rush allowed rank,0.401707,2.640259,26.643073,8.486217,1.447404,15.525031,0.109946,0.039240,52.495624,52.495624,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,24,Braelon Allen,00-0039794,NYJ,MIA,A,RB2,RB1A/RB1B,27,17,2026 public Q1 rush allowed rank,0.440210,2.893321,26.643073,13.945048,1.683386,26.206709,0.355558,0.249460,51.375849,51.375849,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,25,Cam Skattebo,00-0040715,NYG,IND,A,RB1,RB1A/RB1B / QB diluted,29,25,2026 public Q1 rush allowed rank,0.502794,3.503025,27.073229,13.955997,8.734416,19.177579,0.192662,0.056335,51.342268,51.342268,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,26,Zach Charbonnet,00-0039165,SEA,SF,A,RB1,RB1A/RB1B / QB diluted,7,12,2026 public Q1 rush allowed rank,0.328524,1.997424,24.981209,8.708005,0.000000,18.318187,0.189091,0.101782,50.424565,50.424565,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,27,Rhamondre Stevenson,00-0036875,NE,LAC,A,RB1,RB1A/RB1B / QB diluted,32,13,2026 public Q1 rush allowed rank,0.495472,3.172039,26.709131,11.652569,4.722068,18.583070,0.183174,0.074310,47.806767,47.806767,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,28,Travis Etienne Jr.,00-0036973,NO,CIN,A,RB1,RB1A/RB1B / QB diluted,26,27,2026 public Q1 rush allowed rank,0.488983,2.588877,25.737029,11.035051,5.476626,16.593477,0.113208,0.029763,47.543185,47.543185,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,29,Jordan Mason,00-0037525,MIN,ATL,H,RB1,RB1A/RB1B / QB diluted,2,29,2026 public Q1 rush allowed rank,0.294477,2.105166,31.890618,8.990140,3.671141,14.309139,0.060279,0.011990,46.296493,46.296493,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,30,Mike Washington Jr.,00-0040878,LV,CLE,A,RB2,RB1A/RB1B,11,32,2026 public Q1 rush allowed rank,0.275763,1.804447,34.404334,11.640281,6.157529,17.123033,0.126406,0.033811,45.998387,45.998387,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,31,Chris Rodriguez Jr.,00-0038611,JAX,TEN,H,RB2,RB1A/RB1B,6,23,2026 public Q1 rush allowed rank,0.249122,1.767152,30.535847,9.284469,0.268215,18.300723,0.186370,0.095561,45.075650,45.075650,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,32,Rico Dowdle,00-0036139,PIT,DEN,H,RB2,Strong RB1,10,21,2026 public Q1 rush allowed rank,0.241333,1.448849,31.472766,6.725967,0.000000,15.532483,0.129139,0.059819,43.765468,43.765468,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,33,Jacory Croskey-Merritt,00-0040242,WAS,ARI,A,RB1,RB1A/RB1B / QB diluted,5,5,2026 public Q1 rush allowed rank,0.410392,2.558145,22.831830,10.715072,2.051406,19.378739,0.210762,0.108113,43.045893,43.045893,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,34,Tyler Allgeier,00-0037263,ARI,WAS,H,RB1,RB1A/RB1B / QB diluted,1,3,2026 public Q1 rush allowed rank,0.549568,3.587310,22.731284,11.399132,4.053469,18.744795,0.189929,0.082468,41.744144,41.744144,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,35,Jadarian Price,00-0041512,SEA,SF,A,RB2,RB1A/RB1B / QB diluted,7,12,2026 public Q1 rush allowed rank,0.351476,2.136976,24.981209,8.279218,1.535356,15.023080,0.096203,0.031474,39.895239,39.895239,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,36,Woody Marks,00-0040583,HOU,BAL,H,RB2,RB1A/RB1B / QB diluted,19,19,2026 public Q1 rush allowed rank,0.374074,2.163928,22.662818,10.263345,4.333199,16.193492,0.109083,0.031176,39.753042,39.753042,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,37,David Montgomery,00-0035685,HOU,BAL,H,RB1,RB1A/RB1B / QB diluted,19,19,2026 public Q1 rush allowed rank,0.408485,2.362990,22.662818,7.471654,2.951536,11.991772,0.018820,0.001816,37.895629,37.895629,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,38,J.K. Dobbins,00-0036158,DEN,PIT,A,RB2,RB1A/RB1B / QB diluted,8,6,2026 public Q1 rush allowed rank,0.418844,2.284178,19.731448,8.160890,1.414216,14.907564,0.094069,0.030608,37.784324,37.784324,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,39,Samaje Perine,00-0033526,CIN,NO,H,RB2,Strong RB1,30,30,2026 public Q1 rush allowed rank,0.254055,1.511703,28.506885,6.782097,1.704786,11.859408,0.025440,0.003561,37.110287,37.110287,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,40,Kenny Gainwell,00-0036919,TB,CAR,H,RB2,Strong RB1,3,28,2026 public Q1 rush allowed rank,0.158917,1.254599,37.757506,5.959390,1.459390,10.459390,0.009639,0.000753,36.891947,36.891947,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,41,Blake Corum,00-0039738,LA,GB,H,RB2,RB1A/RB1B,31,10,2026 public Q1 rush allowed rank,0.340121,1.962696,24.170654,8.135475,2.175734,14.095216,0.067708,0.016906,35.321638,35.321638,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,42,Kyle Monangai,00-0040236,CHI,DET,A,RB2,Strong RB1 / QB diluted,4,18,2026 public Q1 rush allowed rank,0.181901,1.427497,31.663396,4.344976,0.000000,10.340196,0.025089,0.004884,34.225059,34.225059,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,43,Emmett Johnson,00-0041013,KC,BUF,A,RB2,Strong RB1,16,4,2026 public Q1 rush allowed rank,0.267056,1.615611,24.682765,6.873628,0.000000,18.713575,0.202849,0.125440,34.222545,34.222545,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,44,Josh Jacobs,00-0035700,GB,LA,A,RB1,RB1A/RB1B / QB diluted,15,7,2026 public Q1 rush allowed rank,0.336955,2.175840,20.554652,5.530894,1.030894,10.030894,0.007943,0.000588,32.816744,32.816744,0.000000,PASS,QUESTIONABLE (finger); limited on final official Week 12 report
+12,45,Kaelon Black,00-0041052,SF,SEA,H,RB2,RB1A/RB1B / QB diluted,25,15,2026 public Q1 rush allowed rank,0.259562,1.820215,28.112087,5.691269,0.291956,11.090581,0.023429,0.003658,32.741843,32.741843,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,46,Devin Singletary,00-0035250,NYG,IND,A,RB2,RB1A/RB1B / QB diluted,29,25,2026 public Q1 rush allowed rank,0.177206,1.234611,27.073229,4.453798,0.000000,8.953798,0.004784,0.000308,30.650964,30.650964,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,47,CJ Donaldson,00-0041326,NO,CIN,A,RB2,RB1A/RB1B / QB diluted,26,27,2026 public Q1 rush allowed rank,0.191017,1.011323,25.737029,6.466129,1.966129,10.966129,0.012046,0.001004,30.642144,30.642144,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,48,Keaton Mitchell,00-0038454,LAC,NE,H,RB2,RB1A/RB1B / QB diluted,13,26,2026 public Q1 rush allowed rank,0.155188,1.086776,29.521326,4.022062,0.000000,8.522062,0.003872,0.000236,30.113729,30.113729,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,49,Tyler Goodson,00-0037120,DAL,PHI,H,RB2,Bellcow,22,14,2026 public Q1 rush allowed rank,0.139055,0.976562,29.299144,4.898958,0.000000,10.898294,0.029524,0.005987,29.697329,29.697329,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,50,Will Shipley,00-0039746,PHI,DAL,A,RB2,RB1A/RB1B / QB diluted,28,24,2026 public Q1 rush allowed rank,0.119033,0.779317,31.216150,2.851297,0.000000,7.351297,0.002131,0.000111,29.285419,29.285419,0.000000,PASS,Limited participation on official Week 12 report
+12,51,Jonah Coleman,00-0041496,DEN,PIT,A,RB1,RB1A/RB1B / QB diluted,8,6,2026 public Q1 rush allowed rank,0.283363,1.545330,19.731448,5.694674,0.000000,12.734086,0.063738,0.019850,29.212082,29.212082,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,52,Rachaad White,00-0037256,WAS,ARI,A,RB2,RB1A/RB1B / QB diluted,5,5,2026 public Q1 rush allowed rank,0.269608,1.680582,22.831830,4.810572,0.303070,9.318074,0.005746,0.000391,28.078738,28.078738,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,53,Seth McGowan,00-0041125,IND,NYG,H,RB2,Bellcow,18,22,2026 public Q1 rush allowed rank,0.158568,0.959272,27.551104,3.977393,0.000000,8.477393,0.003788,0.000229,27.566009,27.566009,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,54,Bam Knight,00-0037157,ARI,WAS,H,RB2,RB1A/RB1B / QB diluted,1,3,2026 public Q1 rush allowed rank,0.130432,0.851399,22.731284,4.058141,0.000000,14.917585,0.135445,0.074042,27.096228,27.096228,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,55,Dylan Sampson,00-0040162,CLE,LV,H,RB2,Strong RB1 / QB diluted,24,31,2026 public Q1 rush allowed rank,0.074949,0.488775,30.349530,1.818741,0.000000,6.318741,0.001222,0.000056,27.039338,27.039338,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,56,Kaleb Johnson,00-0040142,GB,LA,A,RB2,RB1A/RB1B / QB diluted,15,7,2026 public Q1 rush allowed rank,0.343045,2.215160,20.554652,8.446269,3.946269,12.946269,0.027076,0.002899,26.522205,26.522205,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,57,Corey Kiner,00-0040556,NE,LAC,A,RB2,RB1A/RB1B / QB diluted,32,13,2026 public Q1 rush allowed rank,0.184528,1.181361,26.709131,6.509639,2.009639,11.009639,0.012276,0.001029,25.929665,25.929665,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,58,Jaylen Wright,00-0039874,MIA,NYJ,H,RB2,RB1A/RB1B / QB diluted,17,20,2026 public Q1 rush allowed rank,0.118417,0.832150,30.547267,2.719537,0.000000,7.219537,0.001988,0.000102,25.874214,25.874214,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,59,Justice Hill,00-0034975,BAL,HOU,A,RB2,Bellcow,20,8,2026 public Q1 rush allowed rank,0.121289,0.852307,28.598121,4.171603,0.000000,9.471500,0.012548,0.001602,22.859488,22.859488,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,60,Ty Johnson,00-0035537,BUF,KC,H,RB2,Strong RB1 / QB diluted,23,11,2026 public Q1 rush allowed rank,0.054702,0.419568,30.380555,1.296174,0.000000,5.796174,0.000913,0.000039,20.339635,20.339635,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,61,Khalil Herbert,00-0036906,ATL,MIN,A,RB2,Bellcow / QB diluted,14,9,2026 public Q1 rush allowed rank,0.038326,0.235829,30.818453,0.935622,0.000000,5.435622,0.000743,0.000030,17.146112,17.146112,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,62,Sione Vaki,00-0039364,DET,CHI,H,RB2,Bellcow,9,2,2026 public Q1 rush allowed rank,0.151237,0.776869,20.647380,2.977554,0.000000,7.477554,0.002276,0.000121,16.495013,16.495013,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,63,Trevor Etienne,00-0040644,CAR,TB,A,RB2,Bellcow,12,16,2026 public Q1 rush allowed rank,0.071796,0.408138,22.366645,1.151741,0.000000,5.651741,0.000841,0.000035,15.696948,15.696948,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
+12,64,Julius Chestnut,00-0037594,TEN,JAX,A,RB2,Bellcow / QB diluted,21,1,2026 public Q1 rush allowed rank,0.031141,0.175628,21.682424,0.538552,0.000000,5.038552,0.000590,0.000023,9.113724,9.113724,0.000000,PASS,Official Week 12 game-status report not yet filed for this matchup as of 2026-11-25 03:00 CT
